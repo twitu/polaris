@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable comment="Offset the game time when audio started" constant="0" name="audioOffset" sid="991972912716137" static="0" type="number">0</variable>
+        <variable comment="game has been started by player" constant="0" name="gameStart" sid="743542712543558" static="0" type="number">0</variable>
         <variable constant="0" name="beatPointer" sid="474636409331464" static="0" type="number">0</variable>
         <comment>Always make the player look at the mouse.</comment>
         <event-block sid="373794152697622">
@@ -118,15 +120,13 @@
                 <condition id="-2" name="On start of layout" sid="993180310370689" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="241789092468209" type="Audio">
-                    <param id="0" name="Audio file">song</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
                 <action id="1" name="Request project file" sid="653632061831577" type="AJAX">
                     <param id="0" name="Tag">&quot;hard&quot;</param>
                     <param id="1" name="File">hard.json</param>
+                </action>
+                <action id="-28" name="Set canvas size" sid="629412525700987" type="System">
+                    <param id="0" name="Width">1280</param>
+                    <param id="1" name="Height">1024</param>
                 </action>
             </actions>
         </event-block>
@@ -137,7 +137,12 @@
                     <param id="0" name="X">beatPointer</param>
                     <param id="1" name="Y">0</param>
                     <param id="2" name="Comparison">3</param>
-                    <param id="3" name="Value">time</param>
+                    <param id="3" name="Value">time - audioOffset</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="719662440641631" type="System">
+                    <param id="0" name="Variable">gameStart</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions>
@@ -157,7 +162,7 @@
                 <condition id="-14" name="Compare variable" sid="186578634909362" type="System">
                     <param id="0" name="Variable">beatPointer</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">Array.Height</param>
+                    <param id="2" name="Value">Array.Width</param>
                 </condition>
             </conditions>
             <actions>
@@ -176,6 +181,20 @@
                 <action id="11" name="Load" sid="371719360054011" type="Array">
                     <param id="0" name="JSON">AJAX.LastData</param>
                 </action>
+                <action id="-9" name="Set value" sid="902004848026673" type="System">
+                    <param id="0" name="Variable">gameStart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="493636507260842" type="System">
+                    <param id="0" name="Variable">audioOffset</param>
+                    <param id="1" name="Value">time</param>
+                </action>
+                <action id="0" name="Play" sid="241789092468209" type="Audio">
+                    <param id="0" name="Audio file">song</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="611525776965528">
@@ -183,8 +202,8 @@
                 <condition id="-1" name="Every tick" sid="255498654054359" type="System" />
             </conditions>
             <actions>
-                <action id="-30" name="Set from JSON" sid="112244413950396" type="Text">
-                    <param id="0" name="JSON">Array.At(beatPointer, 0)</param>
+                <action id="0" name="Set text" sid="112244413950396" type="Text">
+                    <param id="0" name="Text">beatPointer</param>
                 </action>
             </actions>
         </event-block>

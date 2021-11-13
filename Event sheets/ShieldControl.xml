@@ -38,6 +38,10 @@
                             <param id="0" name="Variable">shieldControl</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="0" name="Call function" sid="851766814890151" type="Function">
+                            <param id="0" name="Name">&quot;friendlyClockUpdate&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="377109473453078">
@@ -61,6 +65,10 @@
                         <action id="-9" name="Set value" sid="375273297021494" type="System">
                             <param id="0" name="Variable">shieldControl</param>
                             <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="837324046023632" type="Function">
+                            <param id="0" name="Name">&quot;friendlyClockUpdate&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
                 </event-block>
@@ -101,6 +109,10 @@
                             <param id="0" name="Variable">shieldControl</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="0" name="Call function" sid="150590014007488" type="Function">
+                            <param id="0" name="Name">&quot;friendlyClockUpdate&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="786773014349449">
@@ -125,6 +137,10 @@
                             <param id="0" name="Variable">shieldControl</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="0" name="Call function" sid="891027275815571" type="Function">
+                            <param id="0" name="Name">&quot;friendlyClockUpdate&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -139,6 +155,10 @@
                 <action id="-9" name="Set value" sid="302077942448160" type="System">
                     <param id="0" name="Variable">shieldState</param>
                     <param id="1" name="Value">(ShieldState+ 2) % 4</param>
+                </action>
+                <action id="0" name="Call function" sid="498365138550378" type="Function">
+                    <param id="0" name="Name">&quot;friendlyClockUpdate&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
         </event-block>

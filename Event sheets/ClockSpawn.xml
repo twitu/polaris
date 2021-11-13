@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ClockSpawn</name>
+    <events>
+        <event-block sid="646712883655380">
+            <conditions>
+                <condition id="0" name="On function" sid="516024090555659" type="Function">
+                    <param id="0" name="Name">&quot;enemyClockUpdate&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="844232429020504">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="921965058749682" type="E1_Angle_0">
+                            <param id="0" name="Unique ID">enemyClockID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="294756534783767" type="E1_Angle_0" />
+                    </actions>
+                </event-block>
+                <event-block sid="980982170526534">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="841471106344261" type="E1_Angle_90">
+                            <param id="0" name="Unique ID">enemyClockID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="729418446401727" type="E1_Angle_90" />
+                    </actions>
+                </event-block>
+                <event-block sid="336597680247648">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="681305032223431" type="E1_Angle_45">
+                            <param id="0" name="Unique ID">enemyClockID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="248046794946093" type="E1_Angle_45" />
+                    </actions>
+                </event-block>
+                <event-block sid="747785237042806">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="413818415338142" type="E1_Angle_135">
+                            <param id="0" name="Unique ID">enemyClockID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="997022375100790" type="E1_Angle_135" />
+                    </actions>
+                </event-block>
+                <event-block sid="999340818693729">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="653876983868749" type="System">
+                            <param id="0" name="First value">Array.At(BeatPointer, 1) % 4</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="629713692460122" type="enemyClock">
+                            <param id="0" name="Object">E1_Angle_0</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="528712740329012" type="System">
+                            <param id="0" name="Variable">enemyClockID</param>
+                            <param id="1" name="Value">E1_Angle_0.UID</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="217274929508786">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="939997340275065" type="System">
+                            <param id="0" name="First value">Array.At(BeatPointer, 1) % 4</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="833065918708201" type="enemyClock">
+                            <param id="0" name="Object">E1_Angle_90</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="172794836450841" type="System">
+                            <param id="0" name="Variable">enemyClockID</param>
+                            <param id="1" name="Value">E1_Angle_90.UID</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="406340312517613">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="800732628466868" type="System">
+                            <param id="0" name="First value">Array.At(BeatPointer, 1) % 4</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="427257542031644" type="enemyClock">
+                            <param id="0" name="Object">E1_Angle_45</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="994757927155877" type="System">
+                            <param id="0" name="Variable">enemyClockID</param>
+                            <param id="1" name="Value">E1_Angle_45.UID</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="789169034170832">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="196878503709248" type="System">
+                            <param id="0" name="First value">Array.At(BeatPointer, 1) % 4</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="733244144526653" type="enemyClock">
+                            <param id="0" name="Object">E1_Angle_135</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="555547024305042" type="System">
+                            <param id="0" name="Variable">enemyClockID</param>
+                            <param id="1" name="Value">E1_Angle_135.UID</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="325167451201124">
+            <conditions>
+                <condition id="0" name="On function" sid="836430389523761" type="Function">
+                    <param id="0" name="Name">&quot;friendlyClockUpdate&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="286344211488102">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="895646593435843" type="P_Angle_0">
+                            <param id="0" name="Unique ID">enemyClockID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="235972655142727" type="P_Angle_0" />
+                    </actions>
+                </event-block>
+                <event-block sid="317488852222043">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="858994208359575" type="P_Angle_90">
+                            <param id="0" name="Unique ID">enemyClockID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="195513364454674" type="P_Angle_90" />
+                    </actions>
+                </event-block>
+                <event-block sid="943669620555630">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="793249514462161" type="P_Angle_45">
+                            <param id="0" name="Unique ID">enemyClockID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="211871776618888" type="P_Angle_45" />
+                    </actions>
+                </event-block>
+                <event-block sid="913097163876061">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="379788076094990" type="P_Angle_135">
+                            <param id="0" name="Unique ID">enemyClockID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="124319730337236" type="P_Angle_135" />
+                    </actions>
+                </event-block>
+                <event-block sid="730047651776159">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="779189266485375" type="System">
+                            <param id="0" name="First value">shieldState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="589914045136707" type="friendlyClock">
+                            <param id="0" name="Object">P_Angle_0</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="882357986822531" type="System">
+                            <param id="0" name="Variable">friendlyClockID</param>
+                            <param id="1" name="Value">P_Angle_0.UID</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="723182638966621">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="358558218059250" type="System">
+                            <param id="0" name="First value">shieldState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="744701461606390" type="friendlyClock">
+                            <param id="0" name="Object">P_Angle_90</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="807592787938011" type="System">
+                            <param id="0" name="Variable">friendlyClockID</param>
+                            <param id="1" name="Value">P_Angle_90.UID</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="233242724915081">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="953455537596090" type="System">
+                            <param id="0" name="First value">shieldState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="884040146732085" type="friendlyClock">
+                            <param id="0" name="Object">P_Angle_45</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="691349932752282" type="System">
+                            <param id="0" name="Variable">friendlyClockID</param>
+                            <param id="1" name="Value">P_Angle_45.UID</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="516596688149108">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="924248977904150" type="System">
+                            <param id="0" name="First value">shieldState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="547646310599769" type="friendlyClock">
+                            <param id="0" name="Object">P_Angle_135</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="683711464115397" type="System">
+                            <param id="0" name="Variable">friendlyClockID</param>
+                            <param id="1" name="Value">P_Angle_135.UID</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

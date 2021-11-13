@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="beatPointer" sid="474636409331464" static="0" type="number">0</variable>
+        <comment>Always make the player look at the mouse.</comment>
+        <event-block sid="373794152697622">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="528792326559548" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="356034448506459" type="Player">
+                    <param id="0" name="X">Mouse.X(&quot;Game&quot;)</param>
+                    <param id="1" name="Y">Mouse.Y(&quot;Game&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Shoot 10 times a second while holding the left mouse button down.  Adjust the bullet angle by a random amount (-4 to +4 degrees) to add some inaccuracy to the firing.</comment>
+        <event-block sid="670018721972423">
+            <conditions>
+                <condition id="2" name="Mouse button is down" sid="455143646780997" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="954131245541742" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="779219445977603" type="Player">
+                    <param id="0" name="Object">Bullet</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">&quot;ShootPoint&quot;</param>
+                </action>
+                <action id="-18" name="Rotate clockwise" sid="413534940395463" type="Bullet">
+                    <param id="0" name="Degrees">random(-4, 4)</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>If a bullet hits an enemy, subtract 10 from its health.  When an enemy runs out of health, destroy it.</comment>
+        <event-block sid="700390207492587">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="926783155799936" type="Bullet">
+                    <param id="0" name="Object">Enemy</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="640817827932663" type="Enemy">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="-9" name="Destroy" sid="589820980312428" type="Bullet" />
+            </actions>
+        </event-block>
+        <event-block sid="451359869504719">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="433877243624704" type="Enemy">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="726622808184504" type="Enemy" />
+            </actions>
+        </event-block>
+        <comment>Allow WASD as alternate controls to the default arrow keys.</comment>
+        <event-block sid="368668132296798">
+            <conditions>
+                <condition id="2" name="Key is down" sid="566577088734972" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="102913214209699" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="742709645140307">
+            <conditions>
+                <condition id="2" name="Key is down" sid="116596948859472" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="156651891483220" type="Player">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="559076099578951">
+            <conditions>
+                <condition id="2" name="Key is down" sid="919716062778822" type="Keyboard">
+                    <param id="0" name="Key">83</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="262676082495458" type="Player">
+                    <param id="0" name="Control">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="615911685969384">
+            <conditions>
+                <condition id="2" name="Key is down" sid="940451141920448" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="484678887246856" type="Player">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="748976342198920">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="993180310370689" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="241789092468209" type="Audio">
+                    <param id="0" name="Audio file">song</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="1" name="Request project file" sid="653632061831577" type="AJAX">
+                    <param id="0" name="Tag">&quot;hard&quot;</param>
+                    <param id="1" name="File">hard.json</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="873809045479502">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="786561169540456" type="System" />
+                <condition id="1" name="Compare at XY" sid="512926440085614" type="Array">
+                    <param id="0" name="X">beatPointer</param>
+                    <param id="1" name="Y">0</param>
+                    <param id="2" name="Comparison">3</param>
+                    <param id="3" name="Value">time</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="392601102497031" type="Player">
+                    <param id="0" name="Object">Bullet</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">&quot;ShootPoint&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="345579567501097" type="System">
+                    <param id="0" name="Variable">beatPointer</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="518897769970991">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="186578634909362" type="System">
+                    <param id="0" name="Variable">beatPointer</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">Array.Height</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="816488491020267" type="Text">
+                    <param id="0" name="Text">&quot;Game Over&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="661138976950405">
+            <conditions>
+                <condition id="0" name="On completed" sid="405087223614672" type="AJAX">
+                    <param id="0" name="Tag">&quot;hard&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="11" name="Load" sid="371719360054011" type="Array">
+                    <param id="0" name="JSON">AJAX.LastData</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="611525776965528">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="255498654054359" type="System" />
+            </conditions>
+            <actions>
+                <action id="-30" name="Set from JSON" sid="112244413950396" type="Text">
+                    <param id="0" name="JSON">Array.At(beatPointer, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

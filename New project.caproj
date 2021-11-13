@@ -22,6 +22,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -31,8 +32,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>640</width>
-        <height>480</height>
+        <width>300</width>
+        <height>404</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -53,9 +54,6 @@
             <behaviors>
                 <behavior-type name="BoundToLayout" sid="882280868657308">
                     <behavior id="bound" />
-                </behavior-type>
-                <behavior-type name="ScrollTo" sid="185491121056287">
-                    <behavior id="scrollto" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -117,6 +115,17 @@
                 <instance-variable name="Health" sid="829651768025610" type="number" />
                 <instance-variable name="PolarState" sid="868136518763356" type="number" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="849460476355046">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="503331776424582">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="262779109644577">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475134100979643" speed="5">
                     <frame duration="1" hotspotX="0.513369" hotspotY="0.510417" original-source="E:\Workshop\Github\quantum-duel\Animations\Player\Default\000.png">

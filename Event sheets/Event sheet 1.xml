@@ -35,8 +35,8 @@
                     <param id="1" name="File">hard.json</param>
                 </action>
                 <action id="-28" name="Set canvas size" sid="629412525700987" type="System">
-                    <param id="0" name="Width">1280</param>
-                    <param id="1" name="Height">1024</param>
+                    <param id="0" name="Width">300</param>
+                    <param id="1" name="Height">400</param>
                 </action>
                 <action id="0" name="Play" sid="241789092468209" type="Audio">
                     <param id="0" name="Audio file">song</param>

@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Functions</name>
+    <events>
+        <event-block sid="741894258933569">
+            <conditions>
+                <condition id="0" name="On function" sid="490621458594038" type="Function">
+                    <param id="0" name="Name">&quot;ShieldHit&quot;</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="654095887127455" type="Enemy">
+                    <param id="0" name="Unique ID">Function.Param(1)</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="831013330105911" type="Bullet">
+                    <param id="0" name="Unique ID">Function.Param(0)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="964337505778335">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="637906263485702" type="System">
+                            <param id="0" name="First value">Function.Call(&quot;AngleBetween&quot;, Bullet.PolarState, Enemy.PolarState)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="614272028835036" type="Enemy">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="931862957878675">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="864032167230963" type="System">
+                            <param id="0" name="First value">Function.Call(&quot;AngleBetween&quot;, Bullet.PolarState, Enemy.PolarState)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0.5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="674907719837688" type="Enemy">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="316515073439535">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="499151145181823" type="System">
+                            <param id="0" name="First value">Function.Call(&quot;AngleBetween&quot;, Bullet.PolarState, Enemy.PolarState)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="830697172899042">
+            <conditions>
+                <condition id="0" name="On function" sid="387815729743181" type="Function">
+                    <param id="0" name="Name">&quot;AngleBetween&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="979393570814525">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="155600765151927" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Function.Param(1)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="896674270039143" type="Function">
+                            <param id="0" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="835526897532341">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="193003159800970" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="1" name="Compare parameter" sid="288919374485264" type="Function">
+                            <param id="0" name="Index">1</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="119785442699204" type="Function">
+                            <param id="0" name="Value">0.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="478055561913176">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="155469713563611" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="1" name="Compare parameter" sid="626951071513149" type="Function">
+                            <param id="0" name="Index">1</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="134416227464971" type="Function">
+                            <param id="0" name="Value">0.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="134800139102861">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="367882582808492" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="1" name="Compare parameter" sid="450096468834406" type="Function">
+                            <param id="0" name="Index">1</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="1" name="Compare parameter" sid="467120092341020" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">Function.Param(1)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="135307147096531" type="Function">
+                            <param id="0" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="571376628530814">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="322092341948865" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="1" name="Compare parameter" sid="901992217747878" type="Function">
+                            <param id="0" name="Index">1</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="1" name="Compare parameter" sid="873137329133594" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">Function.Param(1)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="556631966740133" type="Function">
+                            <param id="0" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

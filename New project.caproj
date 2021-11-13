@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -83,6 +84,9 @@
         </object-type>
         <object-type name="Bullet" sid="827522154481524">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="PolarState" sid="928147466983352" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Bullet" sid="746720147627148">
                     <behavior id="Bullet" />
@@ -104,6 +108,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="Health" sid="829651768025610" type="number" />
+                <instance-variable name="PolarState" sid="868136518763356" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475134100979643" speed="5">
@@ -123,6 +128,12 @@
         <object-type global="1" name="Array" sid="466909480978961">
             <plugin id="Arr" />
         </object-type>
+        <object-type name="Function" sid="962237295659142">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Text3" sid="539255862278767">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -130,6 +141,7 @@
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Functions.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="16" />
@@ -149,6 +161,7 @@
             </properties>
         </global-instance>
         <global-instance type="AJAX" uid="19" />
+        <global-instance type="Function" uid="21" />
     </global-instances>
     <sounds-folder />
     <music-folder>

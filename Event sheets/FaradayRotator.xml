@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>FaradayRotator</name>
+    <events>
+        <event-block sid="705578232979488">
+            <conditions>
+                <condition id="0" name="On function" sid="378518834406255" type="Function">
+                    <param id="0" name="Name">&quot;faradayRotate&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="612511397189051">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="603432673919402" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="741165090891501" type="Function">
+                            <param id="0" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="220397092262687">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="147781616504208" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="527753048070874" type="Function">
+                            <param id="0" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="369523263083944">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="266789423650873" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="859269376889017" type="Function">
+                            <param id="0" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="945470461812670">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="142858057496485" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="297700402589966" type="Function">
+                            <param id="0" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="539548325261622">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="557047572755497" type="Bullet">
+                    <param id="0" name="Object">Rotator</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="105387580892689" type="Bullet">
+                    <param id="0" name="Instance variable">PolarState</param>
+                    <param id="1" name="Value">Function.Call(&quot;faradayRotate&quot;, Bullet.PolarState)</param>
+                </action>
+                <action id="0" name="Set text" sid="899685993960389" type="Text2">
+                    <param id="0" name="Text">&quot;Shield: &quot; &amp; shieldState &amp; &quot;BulletState: &quot; &amp; Bullet.PolarState</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

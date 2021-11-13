@@ -221,6 +221,11 @@
                             <point x="0" y="0.48" />
                         </collision-poly>
                     </frame>
+        <object-type name="Rotator" sid="457609326423721">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="821641103017981" speed="5">
+                    <frame duration="1" hotspotX="0.507937" hotspotY="0.508475" original-source="C:\Users\Arkonaire\Downloads\blob.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -233,6 +238,7 @@
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>BulletShield.xml</event-sheet>
         <event-sheet>ShieldControl.xml</event-sheet>
+        <event-sheet>FaradayRotator.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="16" />

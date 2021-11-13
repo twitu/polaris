@@ -13,42 +13,42 @@
             <sub-events>
                 <event-block sid="980982170526534">
                     <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="841471106344261" type="Clock_0">
+                        <condition id="-14" name="Pick by unique ID" sid="841471106344261" type="E1_Angle_0">
                             <param id="0" name="Unique ID">enemyClockID</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="729418446401727" type="Clock_0" />
+                        <action id="-9" name="Destroy" sid="729418446401727" type="E1_Angle_0" />
                     </actions>
                 </event-block>
                 <event-block sid="844232429020504">
                     <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="921965058749682" type="Clock_1">
+                        <condition id="-14" name="Pick by unique ID" sid="921965058749682" type="E1_Angle_90">
                             <param id="0" name="Unique ID">enemyClockID</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="294756534783767" type="Clock_1" />
+                        <action id="-9" name="Destroy" sid="294756534783767" type="E1_Angle_90" />
                     </actions>
                 </event-block>
                 <event-block sid="336597680247648">
                     <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="681305032223431" type="Clock_2">
+                        <condition id="-14" name="Pick by unique ID" sid="681305032223431" type="E1_Angle_45">
                             <param id="0" name="Unique ID">enemyClockID</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="248046794946093" type="Clock_2" />
+                        <action id="-9" name="Destroy" sid="248046794946093" type="E1_Angle_45" />
                     </actions>
                 </event-block>
                 <event-block sid="747785237042806">
                     <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="413818415338142" type="Clock_3">
+                        <condition id="-14" name="Pick by unique ID" sid="413818415338142" type="E1_Angle_135">
                             <param id="0" name="Unique ID">enemyClockID</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="997022375100790" type="Clock_3" />
+                        <action id="-9" name="Destroy" sid="997022375100790" type="E1_Angle_135" />
                     </actions>
                 </event-block>
                 <event-block sid="999340818693729">
@@ -61,13 +61,13 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Spawn another object" sid="629713692460122" type="enemyClock">
-                            <param id="0" name="Object">Clock_0</param>
+                            <param id="0" name="Object">E1_Angle_0</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="Image point">0</param>
                         </action>
                         <action id="-9" name="Set value" sid="528712740329012" type="System">
                             <param id="0" name="Variable">enemyClockID</param>
-                            <param id="1" name="Value">Clock_0.UID</param>
+                            <param id="1" name="Value">E1_Angle_0.UID</param>
                         </action>
                     </actions>
                 </event-block>
@@ -81,13 +81,13 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Spawn another object" sid="833065918708201" type="enemyClock">
-                            <param id="0" name="Object">Clock_1</param>
+                            <param id="0" name="Object">E1_Angle_90</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="Image point">0</param>
                         </action>
                         <action id="-9" name="Set value" sid="172794836450841" type="System">
                             <param id="0" name="Variable">enemyClockID</param>
-                            <param id="1" name="Value">Clock_1.UID</param>
+                            <param id="1" name="Value">E1_Angle_90.UID</param>
                         </action>
                     </actions>
                 </event-block>
@@ -101,13 +101,13 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Spawn another object" sid="427257542031644" type="enemyClock">
-                            <param id="0" name="Object">Clock_2</param>
+                            <param id="0" name="Object">E1_Angle_45</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="Image point">0</param>
                         </action>
                         <action id="-9" name="Set value" sid="994757927155877" type="System">
                             <param id="0" name="Variable">enemyClockID</param>
-                            <param id="1" name="Value">Clock_2.UID</param>
+                            <param id="1" name="Value">E1_Angle_45.UID</param>
                         </action>
                     </actions>
                 </event-block>
@@ -121,13 +121,13 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Spawn another object" sid="733244144526653" type="enemyClock">
-                            <param id="0" name="Object">Clock_3</param>
+                            <param id="0" name="Object">E1_Angle_135</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="Image point">0</param>
                         </action>
                         <action id="-9" name="Set value" sid="555547024305042" type="System">
                             <param id="0" name="Variable">enemyClockID</param>
-                            <param id="1" name="Value">Clock_3.UID</param>
+                            <param id="1" name="Value">E1_Angle_135.UID</param>
                         </action>
                     </actions>
                 </event-block>

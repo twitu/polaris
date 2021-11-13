@@ -119,7 +119,7 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475134100979643" speed="5">
-                    <frame duration="1" hotspotX="0.515152" hotspotY="0.507937" original-source="E:\Workshop\Github\quantum-duel\Animations\Player\Default\000.png">
+                    <frame duration="1" hotspotX="0.513369" hotspotY="0.510417" original-source="E:\Workshop\Github\quantum-duel\Animations\Player\Default\000.png">
                         <collision-poly>
                             <point x="0.00763359" y="0.00925926" />
                             <point x="0.496183" y="0.111111" />
@@ -316,6 +316,9 @@
                             <point x="0" y="0.48" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
         <object-type name="Rotator" sid="457609326423721">
             <plugin id="Sprite" />
             <animation-folder>
@@ -345,9 +348,9 @@
         <event-sheet>ClockSpawn.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="16" />
-        <global-instance type="Keyboard" uid="17" />
-        <global-instance type="Audio" uid="18">
+        <global-instance type="Mouse" uid="18" />
+        <global-instance type="Keyboard" uid="19" />
+        <global-instance type="Audio" uid="21">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -361,8 +364,8 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="AJAX" uid="19" />
-        <global-instance type="Function" uid="21" />
+        <global-instance type="AJAX" uid="24" />
+        <global-instance type="Function" uid="25" />
     </global-instances>
     <sounds-folder />
     <music-folder>

@@ -390,14 +390,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>448</x>
-                        <y>299</y>
+                        <x>188.059432983</x>
+                        <y>345.882904053</y>
                         <z>0</z>
-                        <width>33</width>
-                        <height>63</height>
+                        <width>187</width>
+                        <height>96</height>
                         <depth>0</depth>
-                        <hotspotX>0.515151501</hotspotX>
-                        <hotspotY>0.507936537</hotspotY>
+                        <hotspotX>0.513368964</hotspotX>
+                        <hotspotY>0.510416687</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -424,7 +424,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="enemyClock" uid="10">
+                <instance type="enemyClock" uid="15">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -465,7 +465,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Text" uid="15">
+                <instance type="Text" uid="16">
                     <properties>
                         <text>Data 1</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -519,7 +519,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text2" uid="9">
+                <instance type="Text2" uid="17">
                     <properties>
                         <text>Data 2</text>
                         <initial-visibility>Visible</initial-visibility>

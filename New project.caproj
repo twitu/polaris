@@ -91,7 +91,7 @@
                 <behavior-type name="Bullet" sid="746720147627148">
                     <behavior id="Bullet" />
                 </behavior-type>
-                <behavior-type name="DestroyOutsideLayout" sid="711864970219464">
+                <behavior-type name="DestroyOutsideLayout" sid="364210340104806">
                     <behavior id="destroy" />
                 </behavior-type>
             </behaviors>

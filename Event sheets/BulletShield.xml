@@ -8,9 +8,6 @@
                 <condition id="0" name="On function" sid="490621458594038" type="Function">
                     <param id="0" name="Name">&quot;ShieldHit&quot;</param>
                 </condition>
-                <condition id="-14" name="Pick by unique ID" sid="654095887127455" type="Enemy">
-                    <param id="0" name="Unique ID">Function.Param(1)</param>
-                </condition>
                 <condition id="-14" name="Pick by unique ID" sid="831013330105911" type="Bullet">
                     <param id="0" name="Unique ID">Function.Param(0)</param>
                 </condition>
@@ -20,7 +17,7 @@
                 <event-block sid="964337505778335">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="637906263485702" type="System">
-                            <param id="0" name="First value">Function.Call(&quot;AngleBetween&quot;, Bullet.PolarState, Enemy.PolarState)</param>
+                            <param id="0" name="First value">Function.Call(&quot;AngleBetween&quot;, Bullet.PolarState, ShieldState)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">0</param>
                         </condition>
@@ -35,7 +32,7 @@
                 <event-block sid="931862957878675">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="864032167230963" type="System">
-                            <param id="0" name="First value">Function.Call(&quot;AngleBetween&quot;, Bullet.PolarState, Enemy.PolarState)</param>
+                            <param id="0" name="First value">Function.Call(&quot;AngleBetween&quot;, Bullet.PolarState, ShieldState)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">0.5</param>
                         </condition>
@@ -50,7 +47,7 @@
                 <event-block sid="316515073439535">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="499151145181823" type="System">
-                            <param id="0" name="First value">Function.Call(&quot;AngleBetween&quot;, Bullet.PolarState, Enemy.PolarState)</param>
+                            <param id="0" name="First value">Function.Call(&quot;AngleBetween&quot;, Bullet.PolarState, ShieldState)</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">1</param>
                         </condition>

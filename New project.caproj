@@ -77,7 +77,7 @@
         </object-type>
         <object-type name="TiledBackground" sid="476954194498499">
             <plugin id="TiledBg" />
-            <texture />
+            <texture original-source="D:\Tapan\Projects\Quantum Game\Level1-BG.png" />
         </object-type>
         <object-type name="Mouse" sid="674645268701169">
             <plugin id="Mouse" />
@@ -112,7 +112,18 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475134100979643" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.510204" />
+                    <frame duration="1" hotspotX="0.503817" hotspotY="0.509259" original-source="D:\Tapan\Projects\Quantum Game\Enemy_1.png">
+                        <collision-poly>
+                            <point x="0.00763359" y="0.00925926" />
+                            <point x="0.496183" y="0.111111" />
+                            <point x="0.870229" y="0.157407" />
+                            <point x="0.961832" y="0.5" />
+                            <point x="0.793893" y="0.75" />
+                            <point x="0.496183" y="0.148148" />
+                            <point x="0.534351" y="0.351852" />
+                            <point x="0.572519" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -136,6 +147,82 @@
         </object-type>
         <object-type name="Text2" sid="160335218710216">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite" sid="123608604336860">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="495825595870190" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="D:\Tapan\Projects\Quantum Game\L1_Angle_0.png">
+                        <collision-poly>
+                            <point x="0.16" y="0.16" />
+                            <point x="0.48" y="0" />
+                            <point x="0.84" y="0.16" />
+                            <point x="1" y="0.48" />
+                            <point x="0.84" y="0.84" />
+                            <point x="0.48" y="1" />
+                            <point x="0.16" y="0.84" />
+                            <point x="0" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="454274130291940">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="841687260774559" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="D:\Tapan\Projects\Quantum Game\L1_Angle_45.png">
+                        <collision-poly>
+                            <point x="0.16" y="0.16" />
+                            <point x="0.48" y="0" />
+                            <point x="0.84" y="0.16" />
+                            <point x="1" y="0.48" />
+                            <point x="0.84" y="0.84" />
+                            <point x="0.48" y="1" />
+                            <point x="0.16" y="0.84" />
+                            <point x="0" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="411739657752875">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="623324279932336" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="D:\Tapan\Projects\Quantum Game\L1_Angle_90.png">
+                        <collision-poly>
+                            <point x="0.16" y="0.16" />
+                            <point x="0.48" y="0" />
+                            <point x="0.84" y="0.16" />
+                            <point x="1" y="0.48" />
+                            <point x="0.84" y="0.84" />
+                            <point x="0.48" y="1" />
+                            <point x="0.16" y="0.84" />
+                            <point x="0" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="901498930335916">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="955230175304776" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="D:\Tapan\Projects\Quantum Game\L1_Angle_135.png">
+                        <collision-poly>
+                            <point x="0.16" y="0.16" />
+                            <point x="0.48" y="0" />
+                            <point x="0.84" y="0.16" />
+                            <point x="1" y="0.48" />
+                            <point x="0.84" y="0.84" />
+                            <point x="0.48" y="1" />
+                            <point x="0.16" y="0.84" />
+                            <point x="0" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

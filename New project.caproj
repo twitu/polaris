@@ -221,6 +221,9 @@
                             <point x="0" y="0.48" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
         <object-type name="Rotator" sid="457609326423721">
             <plugin id="Sprite" />
             <animation-folder>

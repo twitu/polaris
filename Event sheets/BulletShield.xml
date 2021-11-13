@@ -166,5 +166,22 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="571079392449549">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="564104498545572" type="Bullet">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="957999186353913" type="Bullet" />
+                <action id="0" name="Call function" sid="779229063541548" type="Function">
+                    <param id="0" name="Name">&quot;ShieldHit&quot;</param>
+                    <param id="1" name="Parameter {n}">Bullet.UID</param>
+                </action>
+                <action id="0" name="Set text" sid="722885538124431" type="Text3">
+                    <param id="0" name="Text">Player.Health</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

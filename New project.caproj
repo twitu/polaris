@@ -22,7 +22,6 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
-        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -52,9 +51,6 @@
         <object-type name="Enemy" sid="236795762056578">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="8Direction" sid="700829266338516">
-                    <behavior id="EightDir" />
-                </behavior-type>
                 <behavior-type name="BoundToLayout" sid="882280868657308">
                     <behavior id="bound" />
                 </behavior-type>
@@ -97,7 +93,18 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="767352154192706" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Arkonaire\Downloads\photon.png">
+                        <collision-poly>
+                            <point x="0.364407" y="0.364407" />
+                            <point x="0.5" y="0.282486" />
+                            <point x="0.659605" y="0.340395" />
+                            <point x="0.672316" y="0.5" />
+                            <point x="0.775424" y="0.775424" />
+                            <point x="0.5" y="0.754237" />
+                            <point x="0.35452" y="0.64548" />
+                            <point x="0.306497" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -148,7 +155,7 @@
         <object-type name="Text2" sid="160335218710216">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite" sid="123608604336860">
+        <object-type name="Clock_1" sid="123608604336860">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="495825595870190" speed="5">
@@ -167,7 +174,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="454274130291940">
+        <object-type name="Clock_2" sid="454274130291940">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="841687260774559" speed="5">
@@ -186,7 +193,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="411739657752875">
+        <object-type name="Clock_0" sid="411739657752875">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="623324279932336" speed="5">
@@ -205,7 +212,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite4" sid="901498930335916">
+        <object-type name="Clock_3" sid="901498930335916">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="955230175304776" speed="5">
@@ -232,6 +239,14 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="enemyClock" sid="885549883853573">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="799102087083945" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -242,6 +257,7 @@
         <event-sheet>BulletShield.xml</event-sheet>
         <event-sheet>ShieldControl.xml</event-sheet>
         <event-sheet>FaradayRotator.xml</event-sheet>
+        <event-sheet>ClockSpawn.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="16" />

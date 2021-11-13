@@ -3,7 +3,14 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+<<<<<<< Updated upstream
         <include>Functions</include>
+=======
+        <include>BulletShield</include>
+        <include>ShieldControl</include>
+        <variable comment="Offset the game time when audio started" constant="0" name="audioOffset" sid="991972912716137" static="0" type="number">0</variable>
+        <variable comment="game has been started by player" constant="0" name="gameStart" sid="743542712543558" static="0" type="number">0</variable>
+>>>>>>> Stashed changes
         <variable constant="0" name="beatPointer" sid="474636409331464" static="0" type="number">0</variable>
         <comment>Always make the player look at the mouse.</comment>
         <event-block sid="373794152697622">

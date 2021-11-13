@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ShieldControl</name>
+    <events>
+        <event-block sid="236250362533678">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="226766590902305" type="Keyboard">
+                    <param id="0" name="Key">90</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="913939667250896">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="311389326246076" type="Enemy">
+                            <param id="0" name="Instance variable">PolarState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="791015795956997" type="Enemy">
+                            <param id="0" name="Instance variable">PolarState</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="0" name="Set text" sid="536596821983843" type="Text2">
+                            <param id="0" name="Text">Enemy.PolarState</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="817542896320522">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="699727845731475" type="Enemy">
+                            <param id="0" name="Instance variable">PolarState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="565549925406542" type="Enemy">
+                            <param id="0" name="Instance variable">PolarState</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="0" name="Set text" sid="429511263437532" type="Text2">
+                            <param id="0" name="Text">Enemy.PolarState</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="226349339236860">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="102433055403217" type="Keyboard">
+                    <param id="0" name="Key">88</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="253529193661299">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="851953207159690" type="Enemy">
+                            <param id="0" name="Instance variable">PolarState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="853032100533138" type="Enemy">
+                            <param id="0" name="Instance variable">PolarState</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="624966287866696" type="Text2">
+                            <param id="0" name="Text">Enemy.PolarState</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="427684330883660">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="176740292108616" type="Enemy">
+                            <param id="0" name="Instance variable">PolarState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="758782511224526" type="Enemy">
+                            <param id="0" name="Instance variable">PolarState</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="103131310014740" type="Text2">
+                            <param id="0" name="Text">Enemy.PolarState</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="312689985339471">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="389118027127729" type="Keyboard">
+                    <param id="0" name="Key">67</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="302077942448160" type="Enemy">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Value">(Enemy.PolarState + 2) % 4</param>
+                </action>
+                <action id="0" name="Set text" sid="637640110515557" type="Text2">
+                    <param id="0" name="Text">Enemy.PolarState</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

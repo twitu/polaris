@@ -134,6 +134,9 @@
         <object-type name="Text3" sid="539255862278767">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Text2" sid="160335218710216">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -141,7 +144,8 @@
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>Functions.xml</event-sheet>
+        <event-sheet>BulletShield.xml</event-sheet>
+        <event-sheet>ShieldControl.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="16" />

@@ -94,6 +94,12 @@
                     <param id="0" name="Width">1280</param>
                     <param id="1" name="Height">1024</param>
                 </action>
+                <action id="0" name="Play" sid="241789092468209" type="Audio">
+                    <param id="0" name="Audio file">song</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="661138976950405">
@@ -112,8 +118,21 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="11" name="Load" sid="371719360054011" type="Array">
-                    <param id="0" name="JSON">AJAX.LastData</param>
+                <action id="0" name="Spawn another object" sid="392601102497031" type="Player">
+                    <param id="0" name="Object">Bullet</param>
+                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                    <param id="2" name="Image point">&quot;ShootPoint&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="802911793588764" type="Bullet">
+                    <param id="0" name="Instance variable">PolarState</param>
+                    <param id="1" name="Value">Array.At(BeatPointer, 1) % 4</param>
+                </action>
+                <action id="0" name="Set text" sid="630060608023075" type="Text">
+                    <param id="0" name="Text">Bullet.PolarState</param>
+                </action>
+                <action id="-10" name="Add to" sid="345579567501097" type="System">
+                    <param id="0" name="Variable">beatPointer</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
@@ -141,49 +160,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="873809045479502">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="786561169540456" type="System" />
-                <condition id="1" name="Compare at XY" sid="512926440085614" type="Array">
-                    <param id="0" name="X">beatPointer</param>
-                    <param id="1" name="Y">0</param>
-                    <param id="2" name="Comparison">3</param>
-                    <param id="3" name="Value">time</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="392601102497031" type="Player">
-                    <param id="0" name="Object">Bullet</param>
-                    <param id="1" name="Layer">&quot;Game&quot;</param>
-                    <param id="2" name="Image point">&quot;ShootPoint&quot;</param>
-                </action>
-                <action id="-10" name="Set value" sid="802911793588764" type="Bullet">
-                    <param id="0" name="Instance variable">PolarState</param>
-                    <param id="1" name="Value">Array.At(BeatPointer, 1) % 4</param>
-                </action>
-                <action id="0" name="Set text" sid="630060608023075" type="Text">
-                    <param id="0" name="Text">Bullet.PolarState</param>
-                </action>
-                <action id="-10" name="Add to" sid="345579567501097" type="System">
-                    <param id="0" name="Variable">beatPointer</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="-9" name="Set value" sid="902004848026673" type="System">
-                    <param id="0" name="Variable">gameStart</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="-9" name="Set value" sid="493636507260842" type="System">
-                    <param id="0" name="Variable">audioOffset</param>
-                    <param id="1" name="Value">time</param>
-                </action>
-                <action id="0" name="Play" sid="241789092468209" type="Audio">
-                    <param id="0" name="Audio file">song</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="413425804955524">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="388369808272395" type="Bullet">
@@ -198,6 +174,26 @@
                 </action>
                 <action id="0" name="Set text" sid="313487356835058" type="Text3">
                     <param id="0" name="Text">Enemy.Health</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="234254063531709">
+            <conditions>
+                <condition id="0" name="On completed" sid="439620833708132" type="AJAX">
+                    <param id="0" name="Tag">&quot;hard&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="11" name="Load" sid="371719360054011" type="Array">
+                    <param id="0" name="JSON">AJAX.LastData</param>
+                </action>
+                <action id="-9" name="Set value" sid="902004848026673" type="System">
+                    <param id="0" name="Variable">gameStart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="493636507260842" type="System">
+                    <param id="0" name="Variable">audioOffset</param>
+                    <param id="1" name="Value">time</param>
                 </action>
             </actions>
         </event-block>

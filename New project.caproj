@@ -49,7 +49,7 @@
         <prop name="Use iOS retina display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="Player" sid="236795762056578">
+        <object-type name="Enemy" sid="236795762056578">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="8Direction" sid="700829266338516">
@@ -64,12 +64,12 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="683532959296219" speed="5">
-                    <frame duration="1" hotspotX="0.515152" hotspotY="0.507937">
-                        <image-point name="ShootPoint" x="1.15152" y="0.507937" />
+                    <frame duration="1" hotspotX="0.509259" hotspotY="0.48855" original-source="E:\Workshop\Github\quantum-duel\Animations\Enemy\Default\000.png">
+                        <image-point name="ShootPoint" x="0.953704" y="0.229008" />
                         <collision-poly>
-                            <point x="0" y="0" />
-                            <point x="0.977273" y="0.5" />
                             <point x="0" y="1" />
+                            <point x="0.5" y="0.022727" />
+                            <point x="1" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -104,7 +104,7 @@
         <object-type name="Text" sid="997004768374923">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Enemy" sid="894621094285431">
+        <object-type name="Player" sid="894621094285431">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="Health" sid="829651768025610" type="number" />
@@ -112,7 +112,7 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475134100979643" speed="5">
-                    <frame duration="1" hotspotX="0.503817" hotspotY="0.509259" original-source="D:\Tapan\Projects\Quantum Game\Enemy_1.png">
+                    <frame duration="1" hotspotX="0.515152" hotspotY="0.507937" original-source="E:\Workshop\Github\quantum-duel\Animations\Player\Default\000.png">
                         <collision-poly>
                             <point x="0.00763359" y="0.00925926" />
                             <point x="0.496183" y="0.111111" />

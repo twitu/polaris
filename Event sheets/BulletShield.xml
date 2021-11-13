@@ -23,7 +23,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-12" name="Subtract from" sid="614272028835036" type="Enemy">
+                        <action id="-12" name="Subtract from" sid="614272028835036" type="Player">
                             <param id="0" name="Instance variable">Health</param>
                             <param id="1" name="Value">10</param>
                         </action>
@@ -38,7 +38,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-12" name="Subtract from" sid="674907719837688" type="Enemy">
+                        <action id="-12" name="Subtract from" sid="674907719837688" type="Player">
                             <param id="0" name="Instance variable">Health</param>
                             <param id="1" name="Value">5</param>
                         </action>

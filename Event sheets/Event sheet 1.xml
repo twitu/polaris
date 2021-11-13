@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <include>ClockSpawn</include>
+        <include>FaradayRotator</include>
         <include>BulletShield</include>
         <include>ShieldControl</include>
         <variable comment="Offset the game time when audio started" constant="0" name="audioOffset" sid="991972912716137" static="0" type="number">0</variable>
@@ -10,83 +12,19 @@
         <variable constant="0" name="beatPointer" sid="474636409331464" static="0" type="number">0</variable>
         <variable constant="0" name="shieldState" sid="755659513331453" static="0" type="number">1</variable>
         <variable constant="0" name="shieldControl" sid="837945362835672" static="0" type="number">0</variable>
-        <comment>Always make the player look at the mouse.</comment>
-        <event-block sid="373794152697622">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="528792326559548" type="System" />
-            </conditions>
-            <actions>
-                <action id="-22" name="Set angle toward position" sid="356034448506459" type="Player">
-                    <param id="0" name="X">Mouse.X(&quot;Game&quot;)</param>
-                    <param id="1" name="Y">Mouse.Y(&quot;Game&quot;)</param>
-                </action>
-                <action id="0" name="Set text" sid="365355983635291" type="Text2">
-                    <param id="0" name="Text">shieldState</param>
-                </action>
-            </actions>
-        </event-block>
-        <comment>Shoot 10 times a second while holding the left mouse button down.  Adjust the bullet angle by a random amount (-4 to +4 degrees) to add some inaccuracy to the firing.</comment>
+        <variable constant="0" name="enemyClockID" sid="417714178309510" static="0" type="number">6</variable>
         <event-block sid="451359869504719">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="433877243624704" type="Enemy">
+                <condition id="-7" name="Compare instance variable" sid="433877243624704" type="Player">
                     <param id="0" name="Instance variable">Health</param>
                     <param id="1" name="Comparison">3</param>
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="726622808184504" type="Enemy" />
+                <action id="-9" name="Destroy" sid="726622808184504" type="Player" />
             </actions>
         </event-block>
-        <event-block sid="368668132296798">
-            <conditions>
-                <condition id="2" name="Key is down" sid="566577088734972" type="Keyboard">
-                    <param id="0" name="Key">87</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="102913214209699" type="Player">
-                    <param id="0" name="Control">2</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="742709645140307">
-            <conditions>
-                <condition id="2" name="Key is down" sid="116596948859472" type="Keyboard">
-                    <param id="0" name="Key">65</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="156651891483220" type="Player">
-                    <param id="0" name="Control">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="559076099578951">
-            <conditions>
-                <condition id="2" name="Key is down" sid="919716062778822" type="Keyboard">
-                    <param id="0" name="Key">83</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="262676082495458" type="Player">
-                    <param id="0" name="Control">3</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="615911685969384">
-            <conditions>
-                <condition id="2" name="Key is down" sid="940451141920448" type="Keyboard">
-                    <param id="0" name="Key">68</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="484678887246856" type="Player">
-                    <param id="0" name="Control">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <comment>Start Here</comment>
         <event-block sid="748976342198920">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="993180310370689" type="System" />
@@ -106,6 +44,10 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+                <action id="0" name="Call function" sid="703112977801816" type="Function">
+                    <param id="0" name="Name">&quot;enemyClockUpdate&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="661138976950405">
@@ -124,7 +66,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Spawn another object" sid="392601102497031" type="Player">
+                <action id="0" name="Spawn another object" sid="392601102497031" type="Enemy">
                     <param id="0" name="Object">Bullet</param>
                     <param id="1" name="Layer">&quot;Game&quot;</param>
                     <param id="2" name="Image point">&quot;ShootPoint&quot;</param>
@@ -139,6 +81,10 @@
                 <action id="-10" name="Add to" sid="345579567501097" type="System">
                     <param id="0" name="Variable">beatPointer</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Call function" sid="925230793156203" type="Function">
+                    <param id="0" name="Name">&quot;enemyClockUpdate&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
         </event-block>
@@ -163,23 +109,6 @@
             <actions>
                 <action id="-30" name="Set from JSON" sid="112244413950396" type="Text">
                     <param id="0" name="JSON">Array.At(beatPointer, 0)</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="413425804955524">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="388369808272395" type="Bullet">
-                    <param id="0" name="Object">Enemy</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="800300594684920" type="Bullet" />
-                <action id="0" name="Call function" sid="561215667405933" type="Function">
-                    <param id="0" name="Name">&quot;ShieldHit&quot;</param>
-                    <param id="1" name="Parameter {n}">Bullet.UID</param>
-                </action>
-                <action id="0" name="Set text" sid="313487356835058" type="Text3">
-                    <param id="0" name="Text">Enemy.Health</param>
                 </action>
             </actions>
         </event-block>

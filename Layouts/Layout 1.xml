@@ -59,8 +59,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>383.695129395</x>
-                        <y>90.849609375</y>
+                        <x>383.695007324</x>
+                        <y>90.849998474</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -103,8 +103,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>508.800018311</x>
-                        <y>91.918968201</y>
+                        <x>206.179992676</x>
+                        <y>60.887001038</y>
                         <z>0</z>
                         <width>25</width>
                         <height>25</height>
@@ -304,7 +304,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Player" uid="1">
+                <instance type="Enemy" uid="1">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -312,17 +312,6 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
-                        <behavior-instance type="8Direction">
-                            <properties>
-                                <max-speed>200</max-speed>
-                                <acceleration>600</acceleration>
-                                <deceleration>500</deceleration>
-                                <directions>8 directions</directions>
-                                <set-angle>360 degree (smooth)</set-angle>
-                                <default-controls>Yes</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
                         <behavior-instance type="BoundToLayout">
                             <properties>
                                 <bound-by>Edge</bound-by>
@@ -337,15 +326,15 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>431.142913818</x>
-                        <y>278.035369873</y>
+                        <x>115</x>
+                        <y>80</y>
                         <z>0</z>
-                        <width>187</width>
-                        <height>96</height>
+                        <width>108</width>
+                        <height>131</height>
                         <depth>0</depth>
-                        <hotspotX>0.518716574</hotspotX>
-                        <hotspotY>0.510416687</hotspotY>
-                        <angle>0</angle>
+                        <hotspotX>0.509259284</hotspotX>
+                        <hotspotY>0.48854962</hotspotY>
+                        <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -375,11 +364,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>148.828079224</x>
-                        <y>131.138702393</y>
+                        <x>454.781463623</x>
+                        <y>186.910629272</y>
                         <z>0</z>
-                        <width>10</width>
-                        <height>10</height>
+                        <width>25.922962189</width>
+                        <height>25.922962189</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -387,7 +376,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="8">
+                <instance type="Player" uid="8">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -401,14 +390,58 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>114</x>
-                        <y>80</y>
+                        <x>448</x>
+                        <y>299</y>
                         <z>0</z>
-                        <width>131</width>
-                        <height>108</height>
+                        <width>33</width>
+                        <height>63</height>
                         <depth>0</depth>
-                        <hotspotX>0.503816783</hotspotX>
-                        <hotspotY>0.509259284</hotspotY>
+                        <hotspotX>0.515151501</hotspotX>
+                        <hotspotY>0.507936537</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Rotator" uid="3">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>546</x>
+                        <y>191</y>
+                        <z>0</z>
+                        <width>63</width>
+                        <height>59</height>
+                        <depth>0</depth>
+                        <hotspotX>0.507936537</hotspotX>
+                        <hotspotY>0.508474588</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="enemyClock" uid="10">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>206.179977417</x>
+                        <y>60.886688232</y>
+                        <z>0</z>
+                        <width>25</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -434,10 +467,10 @@
             <instances>
                 <instance type="Text" uid="15">
                     <properties>
-                        <text>Arrow keys or WASD to move, mouse to aim and shoot</text>
+                        <text>Data 1</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
-                        <color>255,255,255</color>
+                        <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -447,8 +480,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>25.926086426</x>
-                        <y>-68.775093079</y>
+                        <x>314</x>
+                        <y>12</y>
                         <z>0</z>
                         <width>516</width>
                         <height>29</height>
@@ -461,10 +494,10 @@
                 </instance>
                 <instance type="Text3" uid="22">
                     <properties>
-                        <text>Data 1</text>
+                        <text>Data 3</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
-                        <color>255,255,255</color>
+                        <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -474,8 +507,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>322.46105957</x>
-                        <y>16.657028198</y>
+                        <x>341</x>
+                        <y>196</y>
                         <z>0</z>
                         <width>516</width>
                         <height>29</height>
@@ -486,12 +519,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text2" uid="3">
+                <instance type="Text2" uid="9">
                     <properties>
-                        <text>Shield</text>
+                        <text>Data 2</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
-                        <color>255,255,255</color>
+                        <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -501,8 +534,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>204.277603149</x>
-                        <y>-44.693840027</y>
+                        <x>339</x>
+                        <y>164</y>
                         <z>0</z>
                         <width>200</width>
                         <height>30</height>

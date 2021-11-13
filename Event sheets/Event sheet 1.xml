@@ -13,6 +13,8 @@
         <variable constant="0" name="shieldState" sid="755659513331453" static="0" type="number">1</variable>
         <variable constant="0" name="shieldControl" sid="837945362835672" static="0" type="number">0</variable>
         <variable constant="0" name="enemyClockID" sid="417714178309510" static="0" type="number">6</variable>
+        <variable constant="0" name="friendlyClockID" sid="387173527151016" static="0" type="number">12</variable>
+        <variable constant="0" name="cannonCharge" sid="846304756960556" static="0" type="number">0</variable>
         <event-block sid="451359869504719">
             <conditions>
                 <condition id="-7" name="Compare instance variable" sid="433877243624704" type="Player">
@@ -46,6 +48,10 @@
                 </action>
                 <action id="0" name="Call function" sid="703112977801816" type="Function">
                     <param id="0" name="Name">&quot;enemyClockUpdate&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Call function" sid="263920432899734" type="Function">
+                    <param id="0" name="Name">&quot;friendlyClockUpdate&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>

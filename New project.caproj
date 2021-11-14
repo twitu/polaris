@@ -57,9 +57,49 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="683532959296219" speed="5">
-                    <frame duration="1" hotspotX="0.509259" hotspotY="0.48855" original-source="E:\Workshop\Github\quantum-duel\Animations\Enemy\Default\000.png">
-                        <image-point name="ShootPoint" x="0.953704" y="0.229008" />
+                <animation framecount="6" loop="0" name="EnemyShoot" pingpong="0" repeatcount="1" repeatto="0" sid="683532959296219" speed="5">
+                    <frame duration="1" hotspotX="0.51" hotspotY="0.488971" original-source="D:\Tapan\Projects\Quantum Game\Enemy_1.png">
+                        <image-point name="ShootPoint" x="0.955" y="0.227941" />
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0.5" y="0.022727" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.51" hotspotY="0.488806" original-source="D:\Tapan\Projects\Quantum Game\Enemy_2.png">
+                        <image-point name="ShootPoint" x="0.955" y="0.227612" />
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0.5" y="0.022727" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.51" hotspotY="0.488636" original-source="D:\Tapan\Projects\Quantum Game\Enemy_3.png">
+                        <image-point name="ShootPoint" x="0.955" y="0.227273" />
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0.5" y="0.022727" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.51" hotspotY="0.488462" original-source="D:\Tapan\Projects\Quantum Game\Enemy_4.png">
+                        <image-point name="ShootPoint" x="0.955" y="0.226923" />
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0.5" y="0.022727" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.51" hotspotY="0.488636">
+                        <image-point name="ShootPoint" x="0.955" y="0.227273" />
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0.5" y="0.022727" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.51" hotspotY="0.488806">
+                        <image-point name="ShootPoint" x="0.955" y="0.227612" />
                         <collision-poly>
                             <point x="0" y="1" />
                             <point x="0.5" y="0.022727" />
@@ -71,7 +111,7 @@
         </object-type>
         <object-type name="TiledBackground" sid="476954194498499">
             <plugin id="TiledBg" />
-            <texture original-source="D:\Tapan\Projects\Quantum Game\L1_BG.png" />
+            <texture original-source="D:\Tapan\Projects\Quantum Game\L1_BG2.png" />
         </object-type>
         <object-type name="Mouse" sid="674645268701169">
             <plugin id="Mouse" />
@@ -127,8 +167,68 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475134100979643" speed="5">
-                    <frame duration="1" hotspotX="0.513369" hotspotY="0.510417" original-source="E:\Workshop\Github\quantum-duel\Animations\Player\Default\000.png">
+                <animation framecount="6" loop="0" name="PlayerShoot" pingpong="0" repeatcount="1" repeatto="0" sid="475134100979643" speed="5">
+                    <frame duration="1" hotspotX="0.51341" hotspotY="0.510121" original-source="D:\Tapan\Projects\Quantum Game\Player.png">
+                        <collision-poly>
+                            <point x="0.00763359" y="0.00925926" />
+                            <point x="0.496183" y="0.111111" />
+                            <point x="0.870229" y="0.157407" />
+                            <point x="0.961832" y="0.5" />
+                            <point x="0.793893" y="0.75" />
+                            <point x="0.496183" y="0.148148" />
+                            <point x="0.534351" y="0.351852" />
+                            <point x="0.572519" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.51341" hotspotY="0.510121" original-source="D:\Tapan\Projects\Quantum Game\Player_2.png">
+                        <collision-poly>
+                            <point x="0.00763359" y="0.00925926" />
+                            <point x="0.496183" y="0.111111" />
+                            <point x="0.870229" y="0.157407" />
+                            <point x="0.961832" y="0.5" />
+                            <point x="0.793893" y="0.75" />
+                            <point x="0.496183" y="0.148148" />
+                            <point x="0.534351" y="0.351852" />
+                            <point x="0.572519" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.51341" hotspotY="0.510121" original-source="D:\Tapan\Projects\Quantum Game\Player_3.png">
+                        <collision-poly>
+                            <point x="0.00763359" y="0.00925926" />
+                            <point x="0.496183" y="0.111111" />
+                            <point x="0.870229" y="0.157407" />
+                            <point x="0.961832" y="0.5" />
+                            <point x="0.793893" y="0.75" />
+                            <point x="0.496183" y="0.148148" />
+                            <point x="0.534351" y="0.351852" />
+                            <point x="0.572519" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.51341" hotspotY="0.510121" original-source="D:\Tapan\Projects\Quantum Game\Player_4.png">
+                        <collision-poly>
+                            <point x="0.00763359" y="0.00925926" />
+                            <point x="0.496183" y="0.111111" />
+                            <point x="0.870229" y="0.157407" />
+                            <point x="0.961832" y="0.5" />
+                            <point x="0.793893" y="0.75" />
+                            <point x="0.496183" y="0.148148" />
+                            <point x="0.534351" y="0.351852" />
+                            <point x="0.572519" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.51341" hotspotY="0.510121">
+                        <collision-poly>
+                            <point x="0.00763359" y="0.00925926" />
+                            <point x="0.496183" y="0.111111" />
+                            <point x="0.870229" y="0.157407" />
+                            <point x="0.961832" y="0.5" />
+                            <point x="0.793893" y="0.75" />
+                            <point x="0.496183" y="0.148148" />
+                            <point x="0.534351" y="0.351852" />
+                            <point x="0.572519" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.51341" hotspotY="0.510121">
                         <collision-poly>
                             <point x="0.00763359" y="0.00925926" />
                             <point x="0.496183" y="0.111111" />
@@ -296,14 +396,14 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="280420340260215" speed="5">
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="D:\Tapan\Projects\Quantum Game\P_Angle_90.png">
                         <collision-poly>
-                            <point x="0.16" y="0.16" />
-                            <point x="0.48" y="0" />
-                            <point x="0.84" y="0.16" />
-                            <point x="1" y="0.48" />
-                            <point x="0.84" y="0.84" />
-                            <point x="0.48" y="1" />
-                            <point x="0.16" y="0.84" />
-                            <point x="0" y="0.48" />
+                            <point x="0.146667" y="0.146667" />
+                            <point x="0.493333" y="0" />
+                            <point x="0.853333" y="0.146667" />
+                            <point x="1" y="0.493333" />
+                            <point x="0.853333" y="0.853333" />
+                            <point x="0.493333" y="1" />
+                            <point x="0.146667" y="0.853333" />
+                            <point x="0" y="0.493333" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -341,6 +441,44 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="799102087083945" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="L1_Angle_90" sid="880246852741578">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="797156835385161" speed="5">
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.506667" original-source="D:\Tapan\Projects\Quantum Game\L1_Angle_90.png">
+                        <collision-poly>
+                            <point x="0.146667" y="0.146667" />
+                            <point x="0.493333" y="0" />
+                            <point x="0.853333" y="0.146667" />
+                            <point x="1" y="0.493333" />
+                            <point x="0.853333" y="0.853333" />
+                            <point x="0.493333" y="1" />
+                            <point x="0.146667" y="0.853333" />
+                            <point x="0" y="0.493333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Battery" sid="741481694713136">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="836253634432242" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Tapan\Projects\Quantum Game\Battery.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.916667" y="0.0681818" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0833333" y="0.931818" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

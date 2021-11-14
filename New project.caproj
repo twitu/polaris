@@ -299,25 +299,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="E1_Angle_0" sid="411739657752875">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="623324279932336" speed="5">
-                    <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="D:\Tapan\Projects\Quantum Game\L1_Angle_90.png">
-                        <collision-poly>
-                            <point x="0.16" y="0.16" />
-                            <point x="0.48" y="0" />
-                            <point x="0.84" y="0.16" />
-                            <point x="1" y="0.48" />
-                            <point x="0.84" y="0.84" />
-                            <point x="0.48" y="1" />
-                            <point x="0.16" y="0.84" />
-                            <point x="0" y="0.48" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="E1_Angle_135" sid="901498930335916">
             <plugin id="Sprite" />
             <animation-folder>
@@ -349,7 +330,7 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
-        <object-type name="P_Angle_90" sid="728099887219136">
+        <object-type name="P_Angle_0" sid="728099887219136">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160026279964721" speed="5">
@@ -387,7 +368,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="P_Angle_0" sid="467627444696219">
+        <object-type name="P_Angle_90" sid="467627444696219">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="280420340260215" speed="5">
@@ -452,7 +433,7 @@
         <object-type name="WinLose" sid="922932565352148">
             <plugin id="Text" />
         </object-type>
-        <object-type name="L1_Angle_90" sid="880246852741578">
+        <object-type name="E1_Angle_0" sid="880246852741578">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="797156835385161" speed="5">

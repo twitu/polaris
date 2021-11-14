@@ -33,15 +33,15 @@
             </conditions>
             <actions>
                 <action id="1" name="Request project file" sid="653632061831577" type="AJAX">
-                    <param id="0" name="Tag">&quot;hard&quot;</param>
-                    <param id="1" name="File">hard.json</param>
+                    <param id="0" name="Tag">&quot;hard-level&quot;</param>
+                    <param id="1" name="File">hard-level.json</param>
                 </action>
                 <action id="-28" name="Set canvas size" sid="629412525700987" type="System">
                     <param id="0" name="Width">300</param>
                     <param id="1" name="Height">400</param>
                 </action>
                 <action id="0" name="Play" sid="241789092468209" type="Audio">
-                    <param id="0" name="Audio file">song</param>
+                    <param id="0" name="Audio file">who likes to party</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
@@ -147,7 +147,7 @@
         <event-block sid="234254063531709">
             <conditions>
                 <condition id="0" name="On completed" sid="439620833708132" type="AJAX">
-                    <param id="0" name="Tag">&quot;hard&quot;</param>
+                    <param id="0" name="Tag">&quot;hard-level&quot;</param>
                 </condition>
             </conditions>
             <actions>

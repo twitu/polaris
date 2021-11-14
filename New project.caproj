@@ -505,7 +505,7 @@
     </global-instances>
     <sounds-folder />
     <music-folder>
-        <file name="song.ogg" />
+        <file name="who likes to party.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">
@@ -516,6 +516,8 @@
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
         </file-folder>
-        <file name="hard.json" />
+        <file name="expert-level.json" />
+        <file name="expert-plus-level.json" />
+        <file name="hard-level.json" />
     </files-folder>
 </c2project>

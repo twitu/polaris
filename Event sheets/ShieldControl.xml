@@ -72,6 +72,62 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="815270419091889">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="727234411378229" type="System">
+                            <param id="0" name="Variable">shieldState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="287183125773947" type="System">
+                            <param id="0" name="Variable">shieldControl</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="725035482906884" type="System">
+                            <param id="0" name="Variable">shieldState</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="882807110800645" type="System">
+                            <param id="0" name="Variable">shieldControl</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="119455743790206" type="Function">
+                            <param id="0" name="Name">&quot;friendlyClockUpdate&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="813126626921712">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="492708775237705" type="System">
+                            <param id="0" name="Variable">shieldState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="525438840431011" type="System">
+                            <param id="0" name="Variable">shieldControl</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="900445695915896" type="System">
+                            <param id="0" name="Variable">shieldState</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="947433700525371" type="System">
+                            <param id="0" name="Variable">shieldControl</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="277275815862815" type="Function">
+                            <param id="0" name="Name">&quot;friendlyClockUpdate&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-block>
         <event-block sid="226349339236860">
@@ -143,24 +199,63 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="902161126752738">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="334628062657591" type="System">
+                            <param id="0" name="Variable">shieldState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="374478191085895" type="System">
+                            <param id="0" name="Variable">shieldControl</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="644627172516347" type="System">
+                            <param id="0" name="Variable">shieldState</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="780129019712599" type="System">
+                            <param id="0" name="Variable">shieldControl</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="269458830850934" type="Function">
+                            <param id="0" name="Name">&quot;friendlyClockUpdate&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="136950287584836">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="127563390023601" type="System">
+                            <param id="0" name="Variable">shieldState</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="801966123297003" type="System">
+                            <param id="0" name="Variable">shieldControl</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="694224642573422" type="System">
+                            <param id="0" name="Variable">shieldState</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="848991857754291" type="System">
+                            <param id="0" name="Variable">shieldControl</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="644025665935684" type="Function">
+                            <param id="0" name="Name">&quot;friendlyClockUpdate&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="312689985339471">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="389118027127729" type="Keyboard">
-                    <param id="0" name="Key">67</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="302077942448160" type="System">
-                    <param id="0" name="Variable">shieldState</param>
-                    <param id="1" name="Value">(ShieldState+ 2) % 4</param>
-                </action>
-                <action id="0" name="Call function" sid="498365138550378" type="Function">
-                    <param id="0" name="Name">&quot;friendlyClockUpdate&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
-                </action>
-            </actions>
         </event-block>
     </events>
 </c2eventsheet>

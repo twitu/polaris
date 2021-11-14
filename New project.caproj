@@ -66,50 +66,56 @@
                 <animation framecount="6" loop="0" name="EnemyShoot" pingpong="0" repeatcount="1" repeatto="0" sid="683532959296219" speed="5">
                     <frame duration="1" hotspotX="0.488971" hotspotY="0.49" original-source="D:\Tapan\Projects\Quantum Game\Enemy_1.png">
                         <image-point name="ShootPoint" x="0.981618" y="0.49" />
+                        <image-point name="ClockPoint" x="0.279412" y="-0.405" />
                         <collision-poly>
                             <point x="1" y="1" />
                             <point x="0.022727" y="0.5" />
                             <point x="1" y="0" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.51" hotspotY="0.488806" original-source="D:\Tapan\Projects\Quantum Game\Enemy_2.png">
-                        <image-point name="ShootPoint" x="0.955" y="0.227612" />
+                    <frame duration="1" hotspotX="0.488806" hotspotY="0.49" original-source="D:\Tapan\Projects\Quantum Game\Enemy_2.png">
+                        <image-point name="ShootPoint" x="0.283582" y="-0.405" />
+                        <image-point name="ClockPoint" x="0.279851" y="-0.405" />
                         <collision-poly>
-                            <point x="0" y="1" />
-                            <point x="0.5" y="0.022727" />
                             <point x="1" y="1" />
+                            <point x="0.022727" y="0.5" />
+                            <point x="1" y="0" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.51" hotspotY="0.488636" original-source="D:\Tapan\Projects\Quantum Game\Enemy_3.png">
-                        <image-point name="ShootPoint" x="0.955" y="0.227273" />
+                    <frame duration="1" hotspotX="0.488636" hotspotY="0.49" original-source="D:\Tapan\Projects\Quantum Game\Enemy_3.png">
+                        <image-point name="ShootPoint" x="0.287879" y="-0.405" />
+                        <image-point name="ClockPoint" x="0.280303" y="-0.405" />
                         <collision-poly>
-                            <point x="0" y="1" />
-                            <point x="0.5" y="0.022727" />
                             <point x="1" y="1" />
+                            <point x="0.022727" y="0.5" />
+                            <point x="1" y="0" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.51" hotspotY="0.488462" original-source="D:\Tapan\Projects\Quantum Game\Enemy_4.png">
-                        <image-point name="ShootPoint" x="0.955" y="0.226923" />
+                    <frame duration="1" hotspotX="0.488462" hotspotY="0.49" original-source="D:\Tapan\Projects\Quantum Game\Enemy_4.png">
+                        <image-point name="ShootPoint" x="0.292308" y="-0.405" />
+                        <image-point name="ClockPoint" x="0.280769" y="-0.405" />
                         <collision-poly>
-                            <point x="0" y="1" />
-                            <point x="0.5" y="0.022727" />
                             <point x="1" y="1" />
+                            <point x="0.022727" y="0.5" />
+                            <point x="1" y="0" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.51" hotspotY="0.488636">
-                        <image-point name="ShootPoint" x="0.955" y="0.227273" />
+                    <frame duration="1" hotspotX="0.488636" hotspotY="0.49">
+                        <image-point name="ShootPoint" x="0.287879" y="-0.405" />
+                        <image-point name="ClockPoint" x="0.280303" y="-0.405" />
                         <collision-poly>
-                            <point x="0" y="1" />
-                            <point x="0.5" y="0.022727" />
                             <point x="1" y="1" />
+                            <point x="0.022727" y="0.5" />
+                            <point x="1" y="0" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.51" hotspotY="0.488806">
-                        <image-point name="ShootPoint" x="0.955" y="0.227612" />
+                    <frame duration="1" hotspotX="0.488806" hotspotY="0.49">
+                        <image-point name="ShootPoint" x="0.970149" y="0.48" />
+                        <image-point name="ClockPoint" x="0.279851" y="-0.405" />
                         <collision-poly>
-                            <point x="0" y="1" />
-                            <point x="0.5" y="0.022727" />
                             <point x="1" y="1" />
+                            <point x="0.022727" y="0.5" />
+                            <point x="1" y="0" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -152,7 +158,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text" sid="997004768374923">
+        <object-type name="DebugText" sid="997004768374923">
             <plugin id="Text" />
         </object-type>
         <object-type name="Player" sid="894621094285431">
@@ -172,6 +178,7 @@
             <animation-folder>
                 <animation framecount="6" loop="0" name="PlayerShoot" pingpong="0" repeatcount="1" repeatto="0" sid="475134100979643" speed="5">
                     <frame duration="1" hotspotX="0.51341" hotspotY="0.510121" original-source="D:\Tapan\Projects\Quantum Game\Player.png">
+                        <image-point name="ClockPoint" x="-0.498084" y="0.619433" />
                         <collision-poly>
                             <point x="0.00763359" y="0.00925926" />
                             <point x="0.496183" y="0.111111" />
@@ -184,6 +191,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.51341" hotspotY="0.510121" original-source="D:\Tapan\Projects\Quantum Game\Player_2.png">
+                        <image-point name="ClockPoint" x="-0.498084" y="0.619433" />
                         <collision-poly>
                             <point x="0.00763359" y="0.00925926" />
                             <point x="0.496183" y="0.111111" />
@@ -196,6 +204,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.51341" hotspotY="0.510121" original-source="D:\Tapan\Projects\Quantum Game\Player_3.png">
+                        <image-point name="ClockPoint" x="-0.498084" y="0.619433" />
                         <collision-poly>
                             <point x="0.00763359" y="0.00925926" />
                             <point x="0.496183" y="0.111111" />
@@ -208,6 +217,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.51341" hotspotY="0.510121" original-source="D:\Tapan\Projects\Quantum Game\Player_4.png">
+                        <image-point name="ClockPoint" x="-0.498084" y="0.619433" />
                         <collision-poly>
                             <point x="0.00763359" y="0.00925926" />
                             <point x="0.496183" y="0.111111" />
@@ -220,6 +230,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.51341" hotspotY="0.510121">
+                        <image-point name="ClockPoint" x="-0.498084" y="0.619433" />
                         <collision-poly>
                             <point x="0.00763359" y="0.00925926" />
                             <point x="0.496183" y="0.111111" />
@@ -232,6 +243,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.51341" hotspotY="0.510121">
+                        <image-point name="ClockPoint" x="-0.498084" y="0.619433" />
                         <collision-poly>
                             <point x="0.00763359" y="0.00925926" />
                             <point x="0.496183" y="0.111111" />
@@ -263,6 +275,11 @@
         </object-type>
         <object-type name="E1_Angle_90" sid="123608604336860">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="144132885616384">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="495825595870190" speed="5">
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="D:\Tapan\Projects\Quantum Game\L1_Angle_0.png">
@@ -282,6 +299,11 @@
         </object-type>
         <object-type name="E1_Angle_45" sid="454274130291940">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="525330426334586">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="841687260774559" speed="5">
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="D:\Tapan\Projects\Quantum Game\L1_Angle_45.png">
@@ -301,6 +323,11 @@
         </object-type>
         <object-type name="E1_Angle_135" sid="901498930335916">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="176928818555903">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="955230175304776" speed="5">
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="D:\Tapan\Projects\Quantum Game\L1_Angle_135.png">
@@ -320,10 +347,20 @@
         </object-type>
         <object-type name="EnemyHealthBar" sid="641400274971029">
             <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Pin" sid="199496241310442">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <texture />
         </object-type>
         <object-type name="PlayerHealthBar" sid="221217014166302">
             <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Pin" sid="762774784566396">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <texture />
         </object-type>
         <object-type name="BatteryCharge" sid="627467908411281">
@@ -332,6 +369,11 @@
         </object-type>
         <object-type name="P_Angle_0" sid="728099887219136">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="191302794941727">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160026279964721" speed="5">
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="D:\Tapan\Projects\Quantum Game\P_Angle_0.png">
@@ -351,6 +393,11 @@
         </object-type>
         <object-type name="P_Angle_45" sid="306265741096559">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="695289192810423">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="149207043876246" speed="5">
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="D:\Tapan\Projects\Quantum Game\P_Angle_45.png">
@@ -370,6 +417,11 @@
         </object-type>
         <object-type name="P_Angle_90" sid="467627444696219">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="699496037605454">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="280420340260215" speed="5">
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="D:\Tapan\Projects\Quantum Game\P_Angle_90.png">
@@ -389,6 +441,11 @@
         </object-type>
         <object-type name="P_Angle_135" sid="912272097851162">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="436786092678576">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="692261181128970" speed="5">
                     <frame duration="1" hotspotX="0.52" hotspotY="0.52" original-source="D:\Tapan\Projects\Quantum Game\P_Angle_135.png">
@@ -432,9 +489,19 @@
         </object-type>
         <object-type name="WinLose" sid="922932565352148">
             <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="567733977093810">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
         <object-type name="E1_Angle_0" sid="880246852741578">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="525747472440757">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="797156835385161" speed="5">
                     <frame duration="1" hotspotX="0.506667" hotspotY="0.506667" original-source="D:\Tapan\Projects\Quantum Game\L1_Angle_90.png">

@@ -13,12 +13,22 @@
             <sub-events>
                 <event-block sid="980982170526534">
                     <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="841471106344261" type="E1_Angle_90">
+                        <condition id="-14" name="Pick by unique ID" sid="841471106344261" type="E1_Angle_0">
                             <param id="0" name="Unique ID">enemyClockID</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="729418446401727" type="E1_Angle_90" />
+                        <action id="-9" name="Destroy" sid="729418446401727" type="E1_Angle_0" />
+                    </actions>
+                </event-block>
+                <event-block sid="140003406716053">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="412655774031378" type="E1_Angle_90">
+                            <param id="0" name="Unique ID">enemyClockID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="187696067282976" type="E1_Angle_90" />
                     </actions>
                 </event-block>
                 <event-block sid="336597680247648">
@@ -46,14 +56,18 @@
                         <condition id="-8" name="Compare two values" sid="653876983868749" type="System">
                             <param id="0" name="First value">Array.At(BeatPointer, 1) % 4</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">0</param>
+                            <param id="2" name="Second value">1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="191354254350646" type="enemyClock">
+                        <action id="0" name="Spawn another object" sid="191354254350646" type="Enemy">
                             <param id="0" name="Object">E1_Angle_0</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">0</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">&quot;ClockPoint&quot;</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="479423756667206" type="E1_Angle_0">
+                            <param id="0" name="Pin to">ScrollObject</param>
+                            <param id="1" name="Mode">0</param>
                         </action>
                         <action id="-9" name="Set value" sid="574023239510062" type="System">
                             <param id="0" name="Variable">enemyClockID</param>
@@ -66,16 +80,20 @@
                         <condition id="-8" name="Compare two values" sid="939997340275065" type="System">
                             <param id="0" name="First value">Array.At(BeatPointer, 1) % 4</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">1</param>
+                            <param id="2" name="Second value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="833065918708201" type="enemyClock">
+                        <action id="0" name="Spawn another object" sid="888209453637051" type="Enemy">
                             <param id="0" name="Object">E1_Angle_90</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">0</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">&quot;ClockPoint&quot;</param>
                         </action>
-                        <action id="-9" name="Set value" sid="172794836450841" type="System">
+                        <action behavior="Pin" id="0" name="Pin to object" sid="918170446092715" type="E1_Angle_90">
+                            <param id="0" name="Pin to">ScrollObject</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="868748532046084" type="System">
                             <param id="0" name="Variable">enemyClockID</param>
                             <param id="1" name="Value">E1_Angle_90.UID</param>
                         </action>
@@ -86,16 +104,20 @@
                         <condition id="-8" name="Compare two values" sid="800732628466868" type="System">
                             <param id="0" name="First value">Array.At(BeatPointer, 1) % 4</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">2</param>
+                            <param id="2" name="Second value">3</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="427257542031644" type="enemyClock">
+                        <action id="0" name="Spawn another object" sid="989045000285092" type="Enemy">
                             <param id="0" name="Object">E1_Angle_45</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">0</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">&quot;ClockPoint&quot;</param>
                         </action>
-                        <action id="-9" name="Set value" sid="994757927155877" type="System">
+                        <action behavior="Pin" id="0" name="Pin to object" sid="454961801210244" type="E1_Angle_45">
+                            <param id="0" name="Pin to">ScrollObject</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="329758922321609" type="System">
                             <param id="0" name="Variable">enemyClockID</param>
                             <param id="1" name="Value">E1_Angle_45.UID</param>
                         </action>
@@ -106,16 +128,20 @@
                         <condition id="-8" name="Compare two values" sid="196878503709248" type="System">
                             <param id="0" name="First value">Array.At(BeatPointer, 1) % 4</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">3</param>
+                            <param id="2" name="Second value">2</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="733244144526653" type="enemyClock">
+                        <action id="0" name="Spawn another object" sid="171780015703773" type="Enemy">
                             <param id="0" name="Object">E1_Angle_135</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">0</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">&quot;ClockPoint&quot;</param>
                         </action>
-                        <action id="-9" name="Set value" sid="555547024305042" type="System">
+                        <action behavior="Pin" id="0" name="Pin to object" sid="614151451197068" type="E1_Angle_135">
+                            <param id="0" name="Pin to">ScrollObject</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="705115115139583" type="System">
                             <param id="0" name="Variable">enemyClockID</param>
                             <param id="1" name="Value">E1_Angle_135.UID</param>
                         </action>
@@ -180,10 +206,14 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="963541369409668" type="friendlyClock">
+                        <action id="0" name="Spawn another object" sid="963541369409668" type="Player">
                             <param id="0" name="Object">P_Angle_0</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">0</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">&quot;ClockPoint&quot;</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="366690881040408" type="P_Angle_0">
+                            <param id="0" name="Pin to">ScrollObject</param>
+                            <param id="1" name="Mode">0</param>
                         </action>
                         <action id="-9" name="Set value" sid="945996720481345" type="System">
                             <param id="0" name="Variable">friendlyClockID</param>
@@ -200,10 +230,14 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="853881902801156" type="friendlyClock">
+                        <action id="0" name="Spawn another object" sid="853881902801156" type="Player">
                             <param id="0" name="Object">P_Angle_90</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">0</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">&quot;ClockPoint&quot;</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="176651679439816" type="P_Angle_90">
+                            <param id="0" name="Pin to">ScrollObject</param>
+                            <param id="1" name="Mode">0</param>
                         </action>
                         <action id="-9" name="Set value" sid="281492632312063" type="System">
                             <param id="0" name="Variable">friendlyClockID</param>
@@ -220,10 +254,14 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="991508609565946" type="friendlyClock">
+                        <action id="0" name="Spawn another object" sid="991508609565946" type="Player">
                             <param id="0" name="Object">P_Angle_45</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">0</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">&quot;ClockPoint&quot;</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="177792277370310" type="P_Angle_45">
+                            <param id="0" name="Pin to">ScrollObject</param>
+                            <param id="1" name="Mode">0</param>
                         </action>
                         <action id="-9" name="Set value" sid="793045971204731" type="System">
                             <param id="0" name="Variable">friendlyClockID</param>
@@ -240,10 +278,14 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="145806115198997" type="friendlyClock">
+                        <action id="0" name="Spawn another object" sid="145806115198997" type="Player">
                             <param id="0" name="Object">P_Angle_135</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">0</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">&quot;ClockPoint&quot;</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="765215584896302" type="P_Angle_135">
+                            <param id="0" name="Pin to">ScrollObject</param>
+                            <param id="1" name="Mode">0</param>
                         </action>
                         <action id="-9" name="Set value" sid="259397646845593" type="System">
                             <param id="0" name="Variable">friendlyClockID</param>

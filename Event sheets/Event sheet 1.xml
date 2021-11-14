@@ -141,6 +141,10 @@
                     <param id="0" name="Instance variable">PolarState</param>
                     <param id="1" name="Value">Array.At(BeatPointer, 1) % 4</param>
                 </action>
+                <action id="5" name="Set frame" sid="754378680287842" type="Bullet">
+                    <param id="0" name="Frame number">Bullet.PolarState</param>
+                </action>
+                <action id="2" name="Stop" sid="250741457749776" type="Bullet" />
                 <action id="0" name="Call function" sid="925230793156203" type="Function">
                     <param id="0" name="Name">&quot;enemyClockUpdate&quot;</param>
                     <param id="1" name="Parameter {n}"></param>

@@ -201,6 +201,11 @@
                 <action id="3" name="Start" sid="576876489268785" type="Player">
                     <param id="0" name="From">0</param>
                 </action>
+                <action id="0" name="Spawn another object" sid="962870781319920" type="Enemy">
+                    <param id="0" name="Object">Boom</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="611525776965528">

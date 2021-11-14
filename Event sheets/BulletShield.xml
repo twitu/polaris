@@ -42,6 +42,10 @@
                             <param id="0" name="Instance variable">Health</param>
                             <param id="1" name="Value">5</param>
                         </action>
+                        <action id="-10" name="Add to" sid="739942931863501" type="System">
+                            <param id="0" name="Variable">cannonCharge</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="316515073439535">
@@ -52,7 +56,12 @@
                             <param id="2" name="Second value">1</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-10" name="Add to" sid="708971407173925" type="System">
+                            <param id="0" name="Variable">cannonCharge</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-block>
@@ -177,9 +186,6 @@
                 <action id="0" name="Call function" sid="779229063541548" type="Function">
                     <param id="0" name="Name">&quot;ShieldHit&quot;</param>
                     <param id="1" name="Parameter {n}">Bullet.UID</param>
-                </action>
-                <action id="0" name="Set text" sid="722885538124431" type="Text3">
-                    <param id="0" name="Text">Player.Health</param>
                 </action>
             </actions>
         </event-block>

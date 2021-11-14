@@ -80,9 +80,6 @@
                     <param id="0" name="Instance variable">PolarState</param>
                     <param id="1" name="Value">Function.Call(&quot;faradayRotate&quot;, Bullet.PolarState)</param>
                 </action>
-                <action id="0" name="Set text" sid="899685993960389" type="Text2">
-                    <param id="0" name="Text">&quot;Shield: &quot; &amp; shieldState &amp; &quot;BulletState: &quot; &amp; Bullet.PolarState</param>
-                </action>
             </actions>
         </event-block>
     </events>

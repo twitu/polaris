@@ -81,9 +81,6 @@
                     <param id="0" name="Instance variable">PolarState</param>
                     <param id="1" name="Value">Array.At(BeatPointer, 1) % 4</param>
                 </action>
-                <action id="0" name="Set text" sid="630060608023075" type="Text">
-                    <param id="0" name="Text">Bullet.PolarState</param>
-                </action>
                 <action id="-10" name="Add to" sid="345579567501097" type="System">
                     <param id="0" name="Variable">beatPointer</param>
                     <param id="1" name="Value">1</param>
@@ -108,13 +105,42 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="137727103715787">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="147693354960050" type="System" />
+                <condition id="-14" name="Compare variable" sid="482818867508370" type="System">
+                    <param id="0" name="Variable">cannonCharge</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="688699976497017" type="System">
+                    <param id="0" name="Variable">cannonCharge</param>
+                    <param id="1" name="Value">100</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="611525776965528">
             <conditions>
                 <condition id="-1" name="Every tick" sid="255498654054359" type="System" />
             </conditions>
             <actions>
-                <action id="-30" name="Set from JSON" sid="112244413950396" type="Text">
-                    <param id="0" name="JSON">Array.At(beatPointer, 0)</param>
+                <action id="-7" name="Set size" sid="914204797507383" type="PlayerHealthBar">
+                    <param id="0" name="Width">60 * Player.Health / 100</param>
+                    <param id="1" name="Height">4</param>
+                </action>
+                <action id="-7" name="Set size" sid="212337186692682" type="EnemyHealthBar">
+                    <param id="0" name="Width">60 * Enemy.Health / 100</param>
+                    <param id="1" name="Height">4</param>
+                </action>
+                <action id="-7" name="Set size" sid="485012790719907" type="BatteryCharge">
+                    <param id="0" name="Width">33</param>
+                    <param id="1" name="Height">40 * cannonCharge / 100</param>
+                </action>
+                <action id="-3" name="Set position" sid="423299638496302" type="BatteryCharge">
+                    <param id="0" name="X">BatteryCharge.X</param>
+                    <param id="1" name="Y">373 - 40 * cannonCharge / 100</param>
                 </action>
             </actions>
         </event-block>

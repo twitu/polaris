@@ -13,22 +13,25 @@
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
-        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Scirra" id="radialblur">Radial blur</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -75,7 +78,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.488806" hotspotY="0.49" original-source="D:\Tapan\Projects\Quantum Game\Enemy_2.png">
-                        <image-point name="ShootPoint" x="0.981343" y="0.49" />
+                        <image-point name="ShootPoint" x="0.283582" y="-0.405" />
                         <image-point name="ClockPoint" x="0.279851" y="-0.405" />
                         <collision-poly>
                             <point x="1" y="1" />
@@ -84,7 +87,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.488636" hotspotY="0.49" original-source="D:\Tapan\Projects\Quantum Game\Enemy_3.png">
-                        <image-point name="ShootPoint" x="0.981061" y="0.49" />
+                        <image-point name="ShootPoint" x="0.287879" y="-0.405" />
                         <image-point name="ClockPoint" x="0.280303" y="-0.405" />
                         <collision-poly>
                             <point x="1" y="1" />
@@ -93,7 +96,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.488462" hotspotY="0.49" original-source="D:\Tapan\Projects\Quantum Game\Enemy_4.png">
-                        <image-point name="ShootPoint" x="0.980769" y="0.49" />
+                        <image-point name="ShootPoint" x="0.292308" y="-0.405" />
                         <image-point name="ClockPoint" x="0.280769" y="-0.405" />
                         <collision-poly>
                             <point x="1" y="1" />
@@ -102,7 +105,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.488636" hotspotY="0.49">
-                        <image-point name="ShootPoint" x="0.981061" y="0.49" />
+                        <image-point name="ShootPoint" x="0.287879" y="-0.405" />
                         <image-point name="ClockPoint" x="0.280303" y="-0.405" />
                         <collision-poly>
                             <point x="1" y="1" />
@@ -111,7 +114,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.488806" hotspotY="0.49">
-                        <image-point name="ShootPoint" x="0.981343" y="0.49" />
+                        <image-point name="ShootPoint" x="0.970149" y="0.48" />
                         <image-point name="ClockPoint" x="0.279851" y="-0.405" />
                         <collision-poly>
                             <point x="1" y="1" />
@@ -124,6 +127,11 @@
         </object-type>
         <object-type name="TiledBackground" sid="476954194498499">
             <plugin id="TiledBg" />
+            <effects>
+                <effect-type name="RadialBlur">
+                    <effect id="radialblur" />
+                </effect-type>
+            </effects>
             <texture original-source="D:\Tapan\Projects\Quantum Game\L1_BG2.png" />
         </object-type>
         <object-type name="Mouse" sid="674645268701169">
@@ -552,18 +560,14 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Boom" sid="334976142922070">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Fade" sid="227824967454958">
-                    <behavior id="Fade" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="757878676621031" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.504951" original-source="C:\Users\Arkonaire\Downloads\bomb.png" />
-                </animation>
-            </animation-folder>
+        <object-type name="Button" sid="384051748192332">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="TextBox" sid="583448531235298">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="StartGameText" sid="305103354603625">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

@@ -407,11 +407,11 @@
                         <x>454.781463623</x>
                         <y>186.910629272</y>
                         <z>0</z>
-                        <width>25.922962189</width>
-                        <height>25.922962189</height>
+                        <width>37.493099213</width>
+                        <height>29.987154007</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.50061053</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -522,6 +522,33 @@
                         <z>0</z>
                         <width>33</width>
                         <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="WinLose" uid="17">
+                    <properties>
+                        <text>Yay or Nay?</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Jokerman,-64,400,0</font>
+                        <color>153,0,102</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-3</x>
+                        <y>-133</y>
+                        <z>0</z>
+                        <width>441</width>
+                        <height>115</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

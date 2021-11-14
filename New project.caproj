@@ -94,7 +94,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="767352154192706" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Arkonaire\Downloads\photon.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500611" original-source="C:\Users\Arkonaire\Downloads\pngegg.png">
                         <collision-poly>
                             <point x="0.364407" y="0.364407" />
                             <point x="0.5" y="0.282486" />
@@ -348,6 +348,9 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="WinLose" sid="922932565352148">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

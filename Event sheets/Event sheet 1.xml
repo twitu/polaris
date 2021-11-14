@@ -37,8 +37,8 @@
                     <param id="1" name="File">hard-level.json</param>
                 </action>
                 <action id="-28" name="Set canvas size" sid="629412525700987" type="System">
-                    <param id="0" name="Width">300</param>
-                    <param id="1" name="Height">400</param>
+                    <param id="0" name="Width">900</param>
+                    <param id="1" name="Height">1800</param>
                 </action>
                 <action id="0" name="Play" sid="241789092468209" type="Audio">
                     <param id="0" name="Audio file">who likes to party</param>
@@ -53,6 +53,18 @@
                 <action id="0" name="Call function" sid="263920432899734" type="Function">
                     <param id="0" name="Name">&quot;friendlyClockUpdate&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="450837789735976" type="Enemy">
+                    <param id="0" name="Pin to">ScrollObject</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="894596890284484" type="Player">
+                    <param id="0" name="Pin to">ScrollObject</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="760663369614735" type="Battery">
+                    <param id="0" name="Pin to">ScrollObject</param>
+                    <param id="1" name="Mode">1</param>
                 </action>
             </actions>
         </event-block>
@@ -141,6 +153,9 @@
                 <action id="-3" name="Set position" sid="423299638496302" type="BatteryCharge">
                     <param id="0" name="X">BatteryCharge.X</param>
                     <param id="1" name="Y">373 - 40 * cannonCharge / 100</param>
+                </action>
+                <action id="-2" name="Set Y" sid="544293328419818" type="ScrollObject">
+                    <param id="0" name="Y">ScrollObject.Y + (10 * dt)</param>
                 </action>
             </actions>
         </event-block>

@@ -22,7 +22,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
-        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -32,8 +32,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>300</width>
-        <height>404</height>
+        <width>900</width>
+        <height>1800</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -58,15 +58,18 @@
                 <behavior-type name="BoundToLayout" sid="882280868657308">
                     <behavior id="bound" />
                 </behavior-type>
+                <behavior-type name="Pin" sid="424783853765784">
+                    <behavior id="Pin" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="6" loop="0" name="EnemyShoot" pingpong="0" repeatcount="1" repeatto="0" sid="683532959296219" speed="5">
-                    <frame duration="1" hotspotX="0.51" hotspotY="0.488971" original-source="D:\Tapan\Projects\Quantum Game\Enemy_1.png">
-                        <image-point name="ShootPoint" x="0.955" y="0.227941" />
+                    <frame duration="1" hotspotX="0.488971" hotspotY="0.49" original-source="D:\Tapan\Projects\Quantum Game\Enemy_1.png">
+                        <image-point name="ShootPoint" x="0.981618" y="0.49" />
                         <collision-poly>
-                            <point x="0" y="1" />
-                            <point x="0.5" y="0.022727" />
                             <point x="1" y="1" />
+                            <point x="0.022727" y="0.5" />
+                            <point x="1" y="0" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.51" hotspotY="0.488806" original-source="D:\Tapan\Projects\Quantum Game\Enemy_2.png">
@@ -162,11 +165,8 @@
                 <behavior-type name="BoundToLayout" sid="849460476355046">
                     <behavior id="bound" />
                 </behavior-type>
-                <behavior-type name="ScrollTo" sid="503331776424582">
-                    <behavior id="scrollto" />
-                </behavior-type>
-                <behavior-type name="8Direction" sid="262779109644577">
-                    <behavior id="EightDir" />
+                <behavior-type name="Pin" sid="170594457602002">
+                    <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -454,6 +454,14 @@
         </object-type>
         <object-type name="Battery" sid="741481694713136">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="428498145977878">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="501779722920695">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="836253634432242" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Tapan\Projects\Quantum Game\Battery.png">
@@ -468,6 +476,19 @@
                             <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ScrollObject" sid="615136072075974">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="986072910328244">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="647437672916734" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

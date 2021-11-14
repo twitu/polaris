@@ -40,7 +40,7 @@
                     <actions>
                         <action id="-12" name="Subtract from" sid="674907719837688" type="Player">
                             <param id="0" name="Instance variable">Health</param>
-                            <param id="1" name="Value">5</param>
+                            <param id="1" name="Value">10</param>
                         </action>
                         <action id="-10" name="Add to" sid="739942931863501" type="System">
                             <param id="0" name="Variable">cannonCharge</param>
@@ -59,7 +59,7 @@
                     <actions>
                         <action id="-10" name="Add to" sid="708971407173925" type="System">
                             <param id="0" name="Variable">cannonCharge</param>
-                            <param id="1" name="Value">10</param>
+                            <param id="1" name="Value">20</param>
                         </action>
                     </actions>
                 </event-block>

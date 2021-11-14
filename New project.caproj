@@ -74,7 +74,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.488806" hotspotY="0.49" original-source="D:\Tapan\Projects\Quantum Game\Enemy_2.png">
-                        <image-point name="ShootPoint" x="0.283582" y="-0.405" />
+                        <image-point name="ShootPoint" x="0.981343" y="0.49" />
                         <image-point name="ClockPoint" x="0.279851" y="-0.405" />
                         <collision-poly>
                             <point x="1" y="1" />
@@ -83,7 +83,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.488636" hotspotY="0.49" original-source="D:\Tapan\Projects\Quantum Game\Enemy_3.png">
-                        <image-point name="ShootPoint" x="0.287879" y="-0.405" />
+                        <image-point name="ShootPoint" x="0.981061" y="0.49" />
                         <image-point name="ClockPoint" x="0.280303" y="-0.405" />
                         <collision-poly>
                             <point x="1" y="1" />
@@ -92,7 +92,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.488462" hotspotY="0.49" original-source="D:\Tapan\Projects\Quantum Game\Enemy_4.png">
-                        <image-point name="ShootPoint" x="0.292308" y="-0.405" />
+                        <image-point name="ShootPoint" x="0.980769" y="0.49" />
                         <image-point name="ClockPoint" x="0.280769" y="-0.405" />
                         <collision-poly>
                             <point x="1" y="1" />
@@ -101,7 +101,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.488636" hotspotY="0.49">
-                        <image-point name="ShootPoint" x="0.287879" y="-0.405" />
+                        <image-point name="ShootPoint" x="0.981061" y="0.49" />
                         <image-point name="ClockPoint" x="0.280303" y="-0.405" />
                         <collision-poly>
                             <point x="1" y="1" />
@@ -110,7 +110,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.488806" hotspotY="0.49">
-                        <image-point name="ShootPoint" x="0.970149" y="0.48" />
+                        <image-point name="ShootPoint" x="0.981343" y="0.49" />
                         <image-point name="ClockPoint" x="0.279851" y="-0.405" />
                         <collision-poly>
                             <point x="1" y="1" />

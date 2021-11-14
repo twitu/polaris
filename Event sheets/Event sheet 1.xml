@@ -43,6 +43,34 @@
                 <action id="-21" name="Reset global variables" sid="274316094621488" type="System" />
             </actions>
         </event-block>
+        <event-block sid="382117099365776">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="106018638872385" type="Enemy">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="174239428329638" type="Enemy" />
+                <action id="0" name="Set text" sid="716475801043812" type="WinLose">
+                    <param id="0" name="Text">&quot;You Win!!!&quot;</param>
+                </action>
+                <action id="-3" name="Set position" sid="675392144869566" type="WinLose">
+                    <param id="0" name="X">ScrollObject.X - (450 - 167)</param>
+                    <param id="1" name="Y">ScrollObject.Y - (900 - 825)</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="772939893898354" type="WinLose">
+                    <param id="0" name="Pin to">ScrollObject</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="228683587452176" type="System">
+                    <param id="0" name="Seconds">8</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="785399363480902" type="System" />
+                <action id="-21" name="Reset global variables" sid="677148413471873" type="System" />
+            </actions>
+        </event-block>
         <event-block sid="748976342198920">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="993180310370689" type="System" />

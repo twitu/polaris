@@ -11,11 +11,6 @@
                 <condition id="-14" name="Pick by unique ID" sid="831013330105911" type="Bullet">
                     <param id="0" name="Unique ID">Function.Param(0)</param>
                 </condition>
-                <condition id="-14" name="Compare variable" sid="991469053770191" type="System">
-                    <param id="0" name="Variable">gameStart</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
             </conditions>
             <actions />
             <sub-events>
@@ -45,7 +40,7 @@
                     <actions>
                         <action id="-12" name="Subtract from" sid="674907719837688" type="Player">
                             <param id="0" name="Instance variable">Health</param>
-                            <param id="1" name="Value">5</param>
+                            <param id="1" name="Value">10</param>
                         </action>
                         <action id="-10" name="Add to" sid="739942931863501" type="System">
                             <param id="0" name="Variable">cannonCharge</param>
@@ -64,7 +59,7 @@
                     <actions>
                         <action id="-10" name="Add to" sid="708971407173925" type="System">
                             <param id="0" name="Variable">cannonCharge</param>
-                            <param id="1" name="Value">10</param>
+                            <param id="1" name="Value">20</param>
                         </action>
                     </actions>
                 </event-block>

@@ -37,7 +37,7 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action id="-16" name="Wait" sid="854044960696277" type="System">
-                    <param id="0" name="Seconds">4</param>
+                    <param id="0" name="Seconds">8</param>
                 </action>
                 <action id="-26" name="Restart layout" sid="521636360501773" type="System" />
                 <action id="-21" name="Reset global variables" sid="274316094621488" type="System" />
@@ -65,7 +65,7 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action id="-16" name="Wait" sid="228683587452176" type="System">
-                    <param id="0" name="Seconds">4</param>
+                    <param id="0" name="Seconds">8</param>
                 </action>
                 <action id="-26" name="Restart layout" sid="785399363480902" type="System" />
                 <action id="-21" name="Reset global variables" sid="677148413471873" type="System" />
@@ -114,10 +114,6 @@
                     <param id="0" name="Name">&quot;friendlyClockUpdate&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
                 </action>
-                <action id="-27" name="Set effect enabled" sid="908742132391776" type="TiledBackground">
-                    <param id="0" name="Mode">1</param>
-                    <param id="1" name="Effect">&quot;RadialBlur&quot;</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="661138976950405">
@@ -129,12 +125,24 @@
                     <param id="2" name="Comparison">3</param>
                     <param id="3" name="Value">time - audioOffset</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="719662440641631" type="System">
+                    <param id="0" name="Variable">gameStart</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Spawn another object" sid="392601102497031" type="Enemy">
                     <param id="0" name="Object">Bullet</param>
                     <param id="1" name="Layer">&quot;Game&quot;</param>
                     <param id="2" name="Image point">&quot;ShootPoint&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="808578305896591" type="Enemy">
+                    <param id="0" name="Animation">&quot;EnemyShoot&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="3" name="Start" sid="797791539998930" type="Enemy">
+                    <param id="0" name="From">0</param>
                 </action>
                 <action id="-10" name="Set value" sid="802911793588764" type="Bullet">
                     <param id="0" name="Instance variable">PolarState</param>
@@ -173,14 +181,30 @@
                 <condition id="-1" name="Every tick" sid="147693354960050" type="System" />
                 <condition id="-14" name="Compare variable" sid="482818867508370" type="System">
                     <param id="0" name="Variable">cannonCharge</param>
-                    <param id="1" name="Comparison">4</param>
+                    <param id="1" name="Comparison">5</param>
                     <param id="2" name="Value">100</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="688699976497017" type="System">
                     <param id="0" name="Variable">cannonCharge</param>
-                    <param id="1" name="Value">100</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-12" name="Subtract from" sid="392248696615126" type="Enemy">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+                <action id="4" name="Set animation" sid="725233004489225" type="Player">
+                    <param id="0" name="Animation">&quot;PlayerShoot&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="3" name="Start" sid="576876489268785" type="Player">
+                    <param id="0" name="From">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="962870781319920" type="Enemy">
+                    <param id="0" name="Object">Boom</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
                 </action>
             </actions>
         </event-block>
@@ -220,20 +244,6 @@
                 <action id="11" name="Load" sid="371719360054011" type="Array">
                     <param id="0" name="JSON">AJAX.LastData</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="332958674057382">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="343259801593529" type="System">
-                    <param id="0" name="Variable">gameStart</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-                <condition id="2" name="Key is down" sid="154165138408499" type="Keyboard">
-                    <param id="0" name="Key">32</param>
-                </condition>
-            </conditions>
-            <actions>
                 <action id="-9" name="Set value" sid="902004848026673" type="System">
                     <param id="0" name="Variable">gameStart</param>
                     <param id="1" name="Value">1</param>
@@ -241,27 +251,6 @@
                 <action id="-9" name="Set value" sid="493636507260842" type="System">
                     <param id="0" name="Variable">audioOffset</param>
                     <param id="1" name="Value">time</param>
-                </action>
-                <action id="-15" name="Set visible" sid="771262128088611" type="StartGameText">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="0" name="Play" sid="279170399695223" type="Audio">
-                    <param id="0" name="Audio file">who likes to party</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-                <action id="-27" name="Set effect enabled" sid="409419422983667" type="TiledBackground">
-                    <param id="0" name="Mode">0</param>
-                    <param id="1" name="Effect">&quot;RadialBlur&quot;</param>
-                </action>
-                <action id="-9" name="Set value" sid="764601623754116" type="System">
-                    <param id="0" name="Variable">beatPointer</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-3" name="Set position" sid="577108567525378" type="ScrollObject">
-                    <param id="0" name="X">450</param>
-                    <param id="1" name="Y">900</param>
                 </action>
             </actions>
         </event-block>
